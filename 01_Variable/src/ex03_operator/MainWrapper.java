@@ -106,13 +106,62 @@ public class MainWrapper {
     System.out.println(andResult);
     System.out.println(orResult);
     System.out.println(notResult);
+
+    // Short Circuit Evaluation
+    // 1. 논리 AND : 결과가 false인 조건이 나타나면 더 이상 조건 체크하지 않음. 최종 결과가 F로 정해졌기 대문
+    // 2. 논리 OR : 결과가 true인 조건이 나타나면 더 이상 조건 체크하지 않음. 최종 결과가 T로 정해졌기 대문
+    int i = 10;
+    int j = 10;
+    boolean andSceResult = (++i == 10) && (++j == 10);
+    System.out.println(andSceResult);
+    System.out.println(i);
+    System.out.println(j);
+
+    boolean orSceResult = (j++ == 10) || (i++ == 10); // j=10, i=11일때 비교됨, j가 이미 T니까 연산결과는 T임 (or는 하나라도 T면 T)
+    System.out.println(orSceResult);
+    System.out.println(i);
+    System.out.println(j);
+  }
+
+  // ex05 조건 연산자
+  public static void ex05() {
+    // 조건 연산자(3개의 항을 사용하므로 삼항 연산이라고도 함)
+    // 조건식 ? true인 경우 결과 : false인 경우 결과
+    int score = 50;
+    String result = (score >= 60) ? "합격" : "불합격";
+    System.out.println(result);
+  }
+
+  // ex06 문자열 연산
+  public static void ex06() {
+    // 문자열 연결
+    String str1 = "구디" + "아카데미"; // 문자열 + 문자열
+    String str2 = 4 + "달라"; // 숫자 + 문자열
+    String str3 = 1 + 2 + "번지"; // '3번지' (왼쪽에 있는 1+2 먼저 연산)
+
+    // 정수 -> 문자열
+    // 실수 -> 문자열
+    String str4 = 100 + ""; // 빈 문자열("") 더해주면 됨
+    String str5 = 1.5 + ""; // 빈 문자열("") 더해주면 됨
+
+    // 참고. 문자열로 변환하는 메소드가 있긴 함
+    String str6 = String.valueOf(100); // 빈 문자열 더하는게 더 쉬워서 잘 안쓸뿐
+
+    System.out.println(str1);
+    System.out.println(str2);
+    System.out.println(str3);
+    System.out.println(str4);
+    System.out.println(str5);
+    System.out.println(str6);
   }
 
   public static void main(String[] args) {
 //    ex01(); // ex01 메소드 실행 (메소드 호출)
 //    ex02();
 //    ex03();
-    ex04();
+//    ex04();
+//    ex05();
+    ex06();
   }
 
 }
