@@ -139,6 +139,30 @@ public class MainWrapper {
     // 문자열은 ==로 비교할 수 없기 때문에 if로 작성 x (equals()를 쓰면 된다함)
   }
 
+  public static void ex05_2() {
+    // 월에 따른 계절 월%12
+    // 3 ~ 5 : 봄 3~5
+    // 6 ~ 8 : 여름 6~8
+    // 9 ~ 11: 가을 9~11
+    // 12 ~ 2: 겨울 0~2
+    int month = 7;
+    int mod = month % 12;
+    String season; // "봄", "여름", "가을", "겨울"
+
+    if (mod <= 2) {
+      season = "겨울";
+    } else if (mod <= 5) {
+      season = "봄";
+    } else if (mod <= 8) {
+      season = "여름";
+    } else {
+      season = "가을";
+    }
+    System.out.println(month + "월은 " + season + "입니다");
+
+    // 문자열은 ==로 비교할 수 없기 때문에 if로 작성 x (equals()를 쓰면 된다함)
+  }
+
   public static void ex06() {
     // 월에 따른 분기
     // 1 ~ 3 : 1분기
@@ -148,16 +172,27 @@ public class MainWrapper {
     int month = 7;
     int quarter = 0;
 
-    if (month >= 1 && month <= 3) {
+    if (month <= 3) {
       quarter = 1;
-    } else if (month >= 4 && month <= 6) {
+    } else if (month <= 6) {
       quarter = 2;
-    } else if (month >= 7 && month <= 9) {
+    } else if (month <= 9) {
       quarter = 3;
     } else {
       quarter = 4;
     }
     System.out.println(month + "월은 " + quarter + "분기 입니다");
+  }
+
+  public static void ex06_2() {
+    // 월에 따른 분기 분기 계산
+    // 1 ~ 3 : 1분기 (month -1) /3 + 1 = 1
+    // 4 ~ 6 : 2분기 (month -1) /3 + 1 = 2
+    // 7 ~ 9 : 3분기 (month -1) /3 + 1 = 3
+    // 10 ~ 12 : 4분기 (month -1) /3 + 1 = 4
+    int month = 7;
+
+    System.out.println((month - 1) / 3 + 1 + "분기 입니다");
   }
 
   public static void ex07() {
@@ -189,14 +224,28 @@ public class MainWrapper {
       weekname = "금요일";
       break;
     }
-    System.out.println(day + "일에서 " + nDay + "일 후의 요일은 " + weekname + "입니다");
-
+    System.out.println(day + "일에서 " + nDay + "일 후는 " + weekname + "입니다");
+    // 배열로 스위치없이 풀수도 있음 (05_Array ex01 - ex05)
   }
 
   public static void ex08() {
     // 대소문자 변환 (구글링으로 아스키코드 검색 후 참고)
     char ch = 'A'; // 임의의 대문자 또는 소문자
-    ch += 32; // 32 더해주면 소문자, 빼주면 대문자
+//    if (ch>=65 && ch <90) {
+//      //대문자 범위에 속하는지 검사
+//      ch+=32;
+//    } else if (ch>=97 && ch <122) {
+//      // 소문자 범위에 속하는지 검사
+//      ch-=32;
+//    }
+
+    if (ch >= 'A' && ch < 'Z') {
+      // 대문자 범위에 속하는지 검사
+      ch += 32;
+    } else if (ch >= 'a' && ch < 'z') {
+      // 소문자 범위에 속하는지 검사
+      ch -= 32;
+    }
     System.out.println(ch);
   }
 
@@ -206,7 +255,9 @@ public class MainWrapper {
 //    ex03();
 //    ex04();
 //    ex05();
+//    ex05_2();
 //    ex06();
+//    ex06_2();
     ex07();
 //    ex08();
   }

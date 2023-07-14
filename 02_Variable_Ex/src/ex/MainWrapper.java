@@ -22,8 +22,7 @@ public class MainWrapper {
     // 5% 이자 받으면 통장잔액 얼마?(소수 이하는 버림)
     long balance = 123456L; // 통장잔액
     double pct = 0.05; // 5%
-    // balance = balance * 1 + balance * pct; //타입 안맞아서 오류 '='기준 왼쪽은 long, 오른쪽은
-    // double
+    // balance = balance * 1 + balance * pct; //타입 안맞아서 오류 '='기준 왼쪽은 long, 오른쪽은 double
     // balance = balance * (1+pct); //타입 안맞아서 오류 이유는 같음 (long)(balance)*(1+pct))
     balance *= (1 + pct); // 위의 식 줄인것, 위는 실수가 먼저 나온 상태로 정수 파트로 넘기는 구조라 오류고 이건 자동 변환될 수 있게 항이 두개인거라서 오류 안남
     System.out.println(balance);
