@@ -23,10 +23,10 @@ public class MainWrapper {
     // 배열과 인덱스 외 변수 사용 금지
 
     a[0] = 10;
-    a[1] = 20;
-    a[2] = 30;
-    a[3] = 40;
-    a[4] = 50;
+    for (int i = 1; i < a.length; i++) {
+      a[i] += a[i - 1] + 10;
+    }
+    System.out.println(Arrays.toString(a));
   }
 
   public static void ex03() {
@@ -62,10 +62,11 @@ public class MainWrapper {
     int[] binary = new int[10]; // │ 0 │ 0 │ 0 │ 0 │ 1 │ 0 │ 0 │ 0 │ 1 │ 1 │
                                 // └------------------------------------------------┘
 
-    for (int i = 0; i < 10; i++) {
+    for (int i = binary.length-1; i > 0; i--) {
       binary[i] = number % 2;
-      number = number / 2;
+      number /= 2;
     }
+    System.out.println(Arrays.toString(binary));
 
   }
 
@@ -74,14 +75,32 @@ public class MainWrapper {
     // 평균: 84.8점
     // 최대: 100점
     // 최소: 70점
+    String[] name = { "미희", "정숙", "영철", "상철", "옥자" };
+    int top = 0;
+    int bottom = 0;
     int[] score = { 100, 70, 95, 83, 76 };
     int total = score[0]; // 합계(평균을 구할 때 필요한 변수)
     int max = score[0]; // 최댓값
     int min = score[0]; // 최솟값
 
-    for (int i = 0; i < score.length; i++) {
+    for (int i = 1; i < score.length; i++) {
       total += score[i];
+
+      if (score[i] > max) {
+        max = score[i];
+        top = i;
+      } else if (min > score[i]) {
+        min = score[i];
+        bottom = i;
+      }
     }
+
+    System.out.println((double) total / score.length);
+    System.out.println(max);
+    System.out.println(min);
+    System.out.println("1등 :" + name[top]); //미희
+    System.out.println("5등 :" + name[bottom]); //정숙
+
   }
 
   public static void main(String[] args) {
@@ -89,8 +108,8 @@ public class MainWrapper {
     //    ex02();
     //    ex03();
     //    ex04();
-    ex05();
-    //    ex06();
+    //    ex05();
+    ex06();
   }
 
 }
