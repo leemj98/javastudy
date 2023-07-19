@@ -12,6 +12,7 @@ public class MainWrapper4 {
     return 100;
   }
 
+  // String : 리턴이 string 타입
   public static String ex03() {
     return "Hello World";
   }
