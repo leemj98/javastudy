@@ -1,7 +1,5 @@
 package ex05_BankAccount;
 
-import ex01_BankAccount.BankAccount;
-
 public class MainWrapper {
 
   public static void main(String[] args) {

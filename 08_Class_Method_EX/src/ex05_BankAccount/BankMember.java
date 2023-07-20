@@ -5,11 +5,14 @@ public class BankMember {
   private String name;
   private BankAccount acc;
 
-  //Setter
-  public void setName(String name) {
+  public BankMember(String name,BankAccount acc) {
     this.name = name;
+    this.acc = acc;
   }
 
   //info
-
+  public void info() {
+    System.out.println("고객명: "+name);
+    acc.info();
+  }
 }
