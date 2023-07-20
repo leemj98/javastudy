@@ -3,11 +3,11 @@ package ex01_branch;
 public class MainWrapper {
 
   /*
-   * if¹® 
-   * 1. Á¶°ÇÀ» ¸¸Á·ÇÏ´Â °æ¿ì¿¡¸¸ ½ÇÇàÇÒ ¼ö ÀÖÀ½ 
-   * 3. Çü½Ä 
-   *  if (Á¶°Ç½Ä) { 
-   *    ½ÇÇà¹® 
+   * ifë¬¸ 
+   * 1. ì¡°ê±´ì„ ë§Œì¡±í•˜ëŠ” ê²½ìš°ì—ë§Œ ì‹¤í–‰í•  ìˆ˜ ìˆìŒ 
+   * 3. í˜•ì‹ 
+   *  if (ì¡°ê±´ì‹) { 
+   *    ì‹¤í–‰ë¬¸ 
    *  }
    */
 
@@ -15,83 +15,83 @@ public class MainWrapper {
 
     int score = 100;
     if (score >= 60) {
-      System.out.println("ÇÕ°İ");
+      System.out.println("í•©ê²©");
     }
 
-    // Áß°ıÈ£´Â ½ÇÇà¹®ÀÌ ÇÏ³ªÀÎ °æ¿ì¿¡ »ı·«ÇÒ ¼ö ÀÖ´Ù.
+    // ì¤‘ê´„í˜¸ëŠ” ì‹¤í–‰ë¬¸ì´ í•˜ë‚˜ì¸ ê²½ìš°ì— ìƒëµí•  ìˆ˜ ìˆë‹¤.
     if (score < 60)
-      System.out.println("ºÒÇÕ°İ");
+      System.out.println("ë¶ˆí•©ê²©");
 
   }
 
   /*
-   * else if¹®
-   * 1. if¹® ÀÌÈÄ¿¡ Á¶°Ç½ÄÀÌ ÇÊ¿äÇÑ °æ¿ì »ç¿ëÇÒ ¼ö ÀÖ´Ù.
-   * 2. ¿øÇÏ´Â¸¸Å­ ¹İº¹ÇØ¼­ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
-   * 3. Çü½Ä
-   *    if(Á¶°Ç½Ä){
-   *      ½ÇÇà¹®
+   * else ifë¬¸
+   * 1. ifë¬¸ ì´í›„ì— ì¡°ê±´ì‹ì´ í•„ìš”í•œ ê²½ìš° ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
+   * 2. ì›í•˜ëŠ”ë§Œí¼ ë°˜ë³µí•´ì„œ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
+   * 3. í˜•ì‹
+   *    if(ì¡°ê±´ì‹){
+   *      ì‹¤í–‰ë¬¸
    *    }
-   *    else if(Á¶°Ç½Ä){
-   *      ½ÇÇà¹®
+   *    else if(ì¡°ê±´ì‹){
+   *      ì‹¤í–‰ë¬¸
    *    }
-   *    else if(Á¶°Ç½Ä){
-   *      ½ÇÇà¹®
+   *    else if(ì¡°ê±´ì‹){
+   *      ì‹¤í–‰ë¬¸
    *    }
    */
 
   public static void ex02() {
     int score = -5;
     if (score < 0 || score > 100) {
-      System.out.println("Àß¸øµÈ Á¡¼ö");
+      System.out.println("ì˜ëª»ëœ ì ìˆ˜");
     } else if (score >= 60) {
-      System.out.println("ÇÕ°İ");
+      System.out.println("í•©ê²©");
     } else if (score < 60) {
-      System.out.println("ºÒÇÕ°İ");
+      System.out.println("ë¶ˆí•©ê²©");
     }
   }
 
   /*
-   * else¹®
-   * 1. if¹®ÀÇ ¸¶Áö¸·¿¡ Ãß°¡ÇÒ ¼ö ÀÖÀ½
-   * 2. Á¶°Ç½ÄÀ» ÀÛ¼ºÇÏÁö ¾ÊÀ½
-   * 3. Çü½Ä
-   *    if(Á¶°Ç½Ä) {
-   *      ½ÇÇà¹®
-   *    } else if(Á¶°Ç½Ä) {
-   *      ½ÇÇà¹®
+   * elseë¬¸
+   * 1. ifë¬¸ì˜ ë§ˆì§€ë§‰ì— ì¶”ê°€í•  ìˆ˜ ìˆìŒ
+   * 2. ì¡°ê±´ì‹ì„ ì‘ì„±í•˜ì§€ ì•ŠìŒ
+   * 3. í˜•ì‹
+   *    if(ì¡°ê±´ì‹) {
+   *      ì‹¤í–‰ë¬¸
+   *    } else if(ì¡°ê±´ì‹) {
+   *      ì‹¤í–‰ë¬¸
    *    } else {
-   *      ½ÇÇà¹®
+   *      ì‹¤í–‰ë¬¸
    *    }
    */
 
   public static void ex03() {
     int score = 100;
     if (score < 0 || score > 100) {
-      System.out.println("Àß¸øµÈ Á¡¼ö");
+      System.out.println("ì˜ëª»ëœ ì ìˆ˜");
     } else if (score >= 60) {
-      System.out.println("ÇÕ°İ");
+      System.out.println("í•©ê²©");
     } else {
-      System.out.println("ºÒÇÕ°İ");
+      System.out.println("ë¶ˆí•©ê²©");
     }
   }
 
   /*
-   * switch¹®
-   * 1. ÁöÁ¤µÈ Ç¥Çö½ÄÀÇ °á°ú¿¡ µû¶ó ºĞ±â Ã³¸®(T/F¿¡ ÀÇÇÑ ºĞ±âÃ³¸®°¡ ¾Æ´Ô)
-   * 2. ÀÏ¹İÀûÀ¸·Î if¹®¿¡ ºñÇØ °¡µ¶¼º ÁÁÀ½
-   * 3. °¢ ºĞ±â¸¦ ±¸ºĞÇÏ´Â case¿Í default·Î ±¸¼º
-   * 4. break¸¦ ÅëÇØ¼­ switch¹®À» Á¾·áÇÒ ¼ö ÀÖÀ½
-   * 5. Çü½Ä
-   *  switch(Ç¥Çö½Ä) { //Ç¥Çö½ÄÀÇ °á°ú´Â String, char, int°¡ °¡´É (boolean, double, long ºÒ°¡)
-   *  case °á°ú1:
-   *    ½ÇÇà¹®
+   * switchë¬¸
+   * 1. ì§€ì •ëœ í‘œí˜„ì‹ì˜ ê²°ê³¼ì— ë”°ë¼ ë¶„ê¸° ì²˜ë¦¬(T/Fì— ì˜í•œ ë¶„ê¸°ì²˜ë¦¬ê°€ ì•„ë‹˜)
+   * 2. ì¼ë°˜ì ìœ¼ë¡œ ifë¬¸ì— ë¹„í•´ ê°€ë…ì„± ì¢‹ìŒ
+   * 3. ê° ë¶„ê¸°ë¥¼ êµ¬ë¶„í•˜ëŠ” caseì™€ defaultë¡œ êµ¬ì„±
+   * 4. breakë¥¼ í†µí•´ì„œ switchë¬¸ì„ ì¢…ë£Œí•  ìˆ˜ ìˆìŒ
+   * 5. í˜•ì‹
+   *  switch(í‘œí˜„ì‹) { //í‘œí˜„ì‹ì˜ ê²°ê³¼ëŠ” String, char, intê°€ ê°€ëŠ¥ (boolean, double, long ë¶ˆê°€)
+   *  case ê²°ê³¼1:
+   *    ì‹¤í–‰ë¬¸
    *    break;
-   *  case °á°ú2:
-   *    ½ÇÇà¹®
+   *  case ê²°ê³¼2:
+   *    ì‹¤í–‰ë¬¸
    *    break;
-   *  default: //if·Î Ä¡¸é elseÀÇ °³³ä, break ÇÊ¿ä¾øÀ½
-   *    ½ÇÇà¹®
+   *  default: //ifë¡œ ì¹˜ë©´ elseì˜ ê°œë…, break í•„ìš”ì—†ìŒ
+   *    ì‹¤í–‰ë¬¸
    */
 
   public static void ex04() {
@@ -99,22 +99,22 @@ public class MainWrapper {
 
     switch (button) {
     case 1:
-      System.out.println("¸ñ·Ïº¸±â");
+      System.out.println("ëª©ë¡ë³´ê¸°");
       break;
     case 2:
-      System.out.println("»ó¼¼º¸±â");
+      System.out.println("ìƒì„¸ë³´ê¸°");
       break;
     case 3:
-      System.out.println("»ğÀÔÇÏ±â");
+      System.out.println("ì‚½ì…í•˜ê¸°");
       break;
     case 4:
-      System.out.println("¼öÁ¤ÇÏ±â");
+      System.out.println("ìˆ˜ì •í•˜ê¸°");
       break;
     case 5:
-      System.out.println("»èÁ¦ÇÏ±â");
+      System.out.println("ì‚­ì œí•˜ê¸°");
       break;
     default:
-      System.out.println("Àß¸øµÈ ¼±ÅÃ");
+      System.out.println("ì˜ëª»ëœ ì„ íƒ");
     }
   }
 

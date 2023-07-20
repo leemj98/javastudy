@@ -2,18 +2,18 @@ package ex03_operator;
 
 public class MainWrapper {
 
-  // ex01 ¸Ş¼Òµå ¸¸µé±â (¸Ş¼Òµå Á¤ÀÇ)
-  // Á¤¼ö ½Ç¼ö ¿¬»ê
+  // ex01 ë©”ì†Œë“œ ë§Œë“¤ê¸° (ë©”ì†Œë“œ ì •ì˜)
+  // ì •ìˆ˜ ì‹¤ìˆ˜ ì—°ì‚°
   public static void ex01() {
 
-    // Á¤¼ö ¿¬»ê
+    // ì •ìˆ˜ ì—°ì‚°
     int a = 5;
     int b = 2;
-    int add = a + b; // a¶û b ´õÇØ¼­ add·Î º¸³¿
+    int add = a + b; // aë‘ b ë”í•´ì„œ addë¡œ ë³´ëƒ„
     int sub = a - b;
     int mul = a * b;
-    int mok = a / b; // ¸ò(mok)
-    int mod = a % b; // ³ª¸ÓÁö
+    int mok = a / b; // ëª«(mok)
+    int mod = a % b; // ë‚˜ë¨¸ì§€
 
     System.out.println(add);
     System.out.println(sub);
@@ -21,51 +21,51 @@ public class MainWrapper {
     System.out.println(mok);
     System.out.println(mod);
 
-    // ½Ç¼ö ¿¬»ê
+    // ì‹¤ìˆ˜ ì—°ì‚°
     double x = 5;
     double y = 2;
     double addResult = x + y;
     double subResult = x - y;
     double mulResult = x * y;
-    double divResult = x / y; // ³ª´©±â. ½Ç¼ö´Â ³ª¸ÓÁö ¾µ ÀÏ ¾ø°í ³ª´©±âµµ ±×³É ±¸ÇÏ¸é µÊ. ¸ò°ú ³ª¸ÓÁö ÇÊ¿äÇÏ¸é Á¤¼ö·Î
+    double divResult = x / y; // ë‚˜ëˆ„ê¸°. ì‹¤ìˆ˜ëŠ” ë‚˜ë¨¸ì§€ ì“¸ ì¼ ì—†ê³  ë‚˜ëˆ„ê¸°ë„ ê·¸ëƒ¥ êµ¬í•˜ë©´ ë¨. ëª«ê³¼ ë‚˜ë¨¸ì§€ í•„ìš”í•˜ë©´ ì •ìˆ˜ë¡œ
 
     System.out.println(addResult);
     System.out.println(subResult);
     System.out.println(mulResult);
     System.out.println(divResult);
 
-    // Á¤¼ö³¢¸® °è»êÇØ¼­ ½Ç¼ö °á°ú µµÃâ
+    // ì •ìˆ˜ë¼ë¦¬ ê³„ì‚°í•´ì„œ ì‹¤ìˆ˜ ê²°ê³¼ ë„ì¶œ
     int i = 5;
     int j = 2;
-    double result = (double) i / j; // Ä³½ºÆÃ ´ë»óÀº i, i¸¸ ½Ç¼ö 5.0À¸·Î ¹Ù²ãµµ j´Â ÀÚ¹Ù¿¡¼­ ÀÚµ¿º¯È¯
+    double result = (double) i / j; // ìºìŠ¤íŒ… ëŒ€ìƒì€ i, ië§Œ ì‹¤ìˆ˜ 5.0ìœ¼ë¡œ ë°”ê¿”ë„ jëŠ” ìë°”ì—ì„œ ìë™ë³€í™˜
     System.out.println(result);
   }
 
-  // ex02 Áõ°¨ ¿¬»êÀÚ
+  // ex02 ì¦ê° ì—°ì‚°ì
   public static void ex02() {
 
-    // Áõ°¨ ¿¬»ê(++, --)
+    // ì¦ê° ì—°ì‚°(++, --)
 
-    // ÀüÀ§ ¿¬»ê(¸ÕÀú Áõ°¨)
+    // ì „ìœ„ ì—°ì‚°(ë¨¼ì € ì¦ê°)
     int a = 10;
-    System.out.println(++a); // a¸¦ Áõ°¡½ÃÅ² µÚ Ãâ·Â
+    System.out.println(++a); // aë¥¼ ì¦ê°€ì‹œí‚¨ ë’¤ ì¶œë ¥
     System.out.println(a); // 11 11
 
-    // ÈÄÀ§ ¿¬»ê(³ªÁß¿¡ Áõ°¨)
+    // í›„ìœ„ ì—°ì‚°(ë‚˜ì¤‘ì— ì¦ê°)
     int b = 10;
-    System.out.println(b++); // b¸¦ Ãâ·ÂÇÑ µÚ Áõ°¡½ÃÅ´
+    System.out.println(b++); // bë¥¼ ì¶œë ¥í•œ ë’¤ ì¦ê°€ì‹œí‚´
     System.out.println(b); // 10 11
   }
 
-  // ex03 ´ëÀÔ ¿¬»ê
+  // ex03 ëŒ€ì… ì—°ì‚°
   public static void ex03() {
-    // ´ëÀÔ ¿¬»ê
+    // ëŒ€ì… ì—°ì‚°
     int a = 10;
     int b = a;
     System.out.println(a);
     System.out.println(b);
 
-    // º¹ÇÕ ¿¬»ê(º¹ÇÕ ´ëÀÔ ¿¬»ê)
+    // ë³µí•© ì—°ì‚°(ë³µí•© ëŒ€ì… ì—°ì‚°)
     int x = 10;
     int y = 1;
     y += x; // y=y+x
@@ -73,18 +73,18 @@ public class MainWrapper {
     System.out.println(y);
   }
 
-  // ex04 °ü°è ¿¬»ê, ³í¸® ¿¬»ê
+  // ex04 ê´€ê³„ ì—°ì‚°, ë…¼ë¦¬ ì—°ì‚°
   public static void ex04() {
-    // °ü°è ¿¬»ê(Å©±â ºñ±³)
+    // ê´€ê³„ ì—°ì‚°(í¬ê¸° ë¹„êµ)
     int a = 3;
     int b = 5;
 
-    boolean result1 = a > b; // a°¡ bº¸´Ù Å©¸é T, ¾Æ´Ï¸é F
-    boolean result2 = a >= b; // a°¡ bº¸´Ù Å©°Å³ª °°À¸¸é T, ¾Æ´Ï¸é F
+    boolean result1 = a > b; // aê°€ bë³´ë‹¤ í¬ë©´ T, ì•„ë‹ˆë©´ F
+    boolean result2 = a >= b; // aê°€ bë³´ë‹¤ í¬ê±°ë‚˜ ê°™ìœ¼ë©´ T, ì•„ë‹ˆë©´ F
     boolean result3 = a < b;
     boolean result4 = a <= b;
-    boolean result5 = a == b; // a¿Í b°¡ °°À¸¸é T, ¾Æ´Ï¸é F
-    boolean result6 = a != b; // a¿Í b°¡ ´Ù¸£¸é T, °°À¸¸é F
+    boolean result5 = a == b; // aì™€ bê°€ ê°™ìœ¼ë©´ T, ì•„ë‹ˆë©´ F
+    boolean result6 = a != b; // aì™€ bê°€ ë‹¤ë¥´ë©´ T, ê°™ìœ¼ë©´ F
 
     System.out.println(result1);
     System.out.println(result2);
@@ -93,10 +93,10 @@ public class MainWrapper {
     System.out.println(result5);
     System.out.println(result6);
 
-    // ³í¸® ¿¬»ê
-    // 1. ³í¸® AND : &&, ¸ğµç Á¶°ÇÀÌ ¸¸Á·ÇÏ¸é T, ¾Æ´Ï¸é F
-    // 2. ³í¸® OR : ||, ÇÏ³ªÀÇ Á¶°ÇÀÌ¶óµµ ¸¸Á·ÇÏ¸é T, ¾Æ´Ï¸é F
-    // 3. ³í¸® NOT : ! , Á¶°Ç °á°ú°¡ TÀÌ¸é F, F¸é T
+    // ë…¼ë¦¬ ì—°ì‚°
+    // 1. ë…¼ë¦¬ AND : &&, ëª¨ë“  ì¡°ê±´ì´ ë§Œì¡±í•˜ë©´ T, ì•„ë‹ˆë©´ F
+    // 2. ë…¼ë¦¬ OR : ||, í•˜ë‚˜ì˜ ì¡°ê±´ì´ë¼ë„ ë§Œì¡±í•˜ë©´ T, ì•„ë‹ˆë©´ F
+    // 3. ë…¼ë¦¬ NOT : ! , ì¡°ê±´ ê²°ê³¼ê°€ Tì´ë©´ F, Fë©´ T
     int x = 10;
     int y = 20;
 
@@ -108,8 +108,8 @@ public class MainWrapper {
     System.out.println(notResult);
 
     // Short Circuit Evaluation
-    // 1. ³í¸® AND : °á°ú°¡ falseÀÎ Á¶°ÇÀÌ ³ªÅ¸³ª¸é ´õ ÀÌ»ó Á¶°Ç Ã¼Å©ÇÏÁö ¾ÊÀ½. ÃÖÁ¾ °á°ú°¡ F·Î Á¤ÇØÁ³±â ´ë¹®
-    // 2. ³í¸® OR : °á°ú°¡ trueÀÎ Á¶°ÇÀÌ ³ªÅ¸³ª¸é ´õ ÀÌ»ó Á¶°Ç Ã¼Å©ÇÏÁö ¾ÊÀ½. ÃÖÁ¾ °á°ú°¡ T·Î Á¤ÇØÁ³±â ´ë¹®
+    // 1. ë…¼ë¦¬ AND : ê²°ê³¼ê°€ falseì¸ ì¡°ê±´ì´ ë‚˜íƒ€ë‚˜ë©´ ë” ì´ìƒ ì¡°ê±´ ì²´í¬í•˜ì§€ ì•ŠìŒ. ìµœì¢… ê²°ê³¼ê°€ Fë¡œ ì •í•´ì¡Œê¸° ëŒ€ë¬¸
+    // 2. ë…¼ë¦¬ OR : ê²°ê³¼ê°€ trueì¸ ì¡°ê±´ì´ ë‚˜íƒ€ë‚˜ë©´ ë” ì´ìƒ ì¡°ê±´ ì²´í¬í•˜ì§€ ì•ŠìŒ. ìµœì¢… ê²°ê³¼ê°€ Të¡œ ì •í•´ì¡Œê¸° ëŒ€ë¬¸
     int i = 10;
     int j = 10;
     boolean andSceResult = (++i == 10) && (++j == 10);
@@ -117,35 +117,35 @@ public class MainWrapper {
     System.out.println(i);
     System.out.println(j);
 
-    boolean orSceResult = (j++ == 10) || (i++ == 10); // j=10, i=11ÀÏ¶§ ºñ±³µÊ, j°¡ ÀÌ¹Ì T´Ï±î ¿¬»ê°á°ú´Â TÀÓ (or´Â ÇÏ³ª¶óµµ T¸é T)
+    boolean orSceResult = (j++ == 10) || (i++ == 10); // j=10, i=11ì¼ë•Œ ë¹„êµë¨, jê°€ ì´ë¯¸ Të‹ˆê¹Œ ì—°ì‚°ê²°ê³¼ëŠ” Tì„ (orëŠ” í•˜ë‚˜ë¼ë„ Të©´ T)
     System.out.println(orSceResult);
     System.out.println(i);
     System.out.println(j);
   }
 
-  // ex05 Á¶°Ç ¿¬»êÀÚ
+  // ex05 ì¡°ê±´ ì—°ì‚°ì
   public static void ex05() {
-    // Á¶°Ç ¿¬»êÀÚ(3°³ÀÇ Ç×À» »ç¿ëÇÏ¹Ç·Î »ïÇ× ¿¬»êÀÌ¶ó°íµµ ÇÔ)
-    // Á¶°Ç½Ä ? trueÀÎ °æ¿ì °á°ú : falseÀÎ °æ¿ì °á°ú
+    // ì¡°ê±´ ì—°ì‚°ì(3ê°œì˜ í•­ì„ ì‚¬ìš©í•˜ë¯€ë¡œ ì‚¼í•­ ì—°ì‚°ì´ë¼ê³ ë„ í•¨)
+    // ì¡°ê±´ì‹ ? trueì¸ ê²½ìš° ê²°ê³¼ : falseì¸ ê²½ìš° ê²°ê³¼
     int score = 50;
-    String result = (score >= 60) ? "ÇÕ°İ" : "ºÒÇÕ°İ";
+    String result = (score >= 60) ? "í•©ê²©" : "ë¶ˆí•©ê²©";
     System.out.println(result);
   }
 
-  // ex06 ¹®ÀÚ¿­ ¿¬»ê
+  // ex06 ë¬¸ìì—´ ì—°ì‚°
   public static void ex06() {
-    // ¹®ÀÚ¿­ ¿¬°á
-    String str1 = "±¸µğ" + "¾ÆÄ«µ¥¹Ì"; // ¹®ÀÚ¿­ + ¹®ÀÚ¿­
-    String str2 = 4 + "´Ş¶ó"; // ¼ıÀÚ + ¹®ÀÚ¿­
-    String str3 = 1 + 2 + "¹øÁö"; // '3¹øÁö' (¿ŞÂÊ¿¡ ÀÖ´Â 1+2 ¸ÕÀú ¿¬»ê)
+    // ë¬¸ìì—´ ì—°ê²°
+    String str1 = "êµ¬ë””" + "ì•„ì¹´ë°ë¯¸"; // ë¬¸ìì—´ + ë¬¸ìì—´
+    String str2 = 4 + "ë‹¬ë¼"; // ìˆ«ì + ë¬¸ìì—´
+    String str3 = 1 + 2 + "ë²ˆì§€"; // '3ë²ˆì§€' (ì™¼ìª½ì— ìˆëŠ” 1+2 ë¨¼ì € ì—°ì‚°)
 
-    // Á¤¼ö -> ¹®ÀÚ¿­
-    // ½Ç¼ö -> ¹®ÀÚ¿­
-    String str4 = 100 + ""; // ºó ¹®ÀÚ¿­("") ´õÇØÁÖ¸é µÊ
-    String str5 = 1.5 + ""; // ºó ¹®ÀÚ¿­("") ´õÇØÁÖ¸é µÊ
+    // ì •ìˆ˜ -> ë¬¸ìì—´
+    // ì‹¤ìˆ˜ -> ë¬¸ìì—´
+    String str4 = 100 + ""; // ë¹ˆ ë¬¸ìì—´("") ë”í•´ì£¼ë©´ ë¨
+    String str5 = 1.5 + ""; // ë¹ˆ ë¬¸ìì—´("") ë”í•´ì£¼ë©´ ë¨
 
-    // Âü°í. ¹®ÀÚ¿­·Î º¯È¯ÇÏ´Â ¸Ş¼Òµå°¡ ÀÖ±ä ÇÔ
-    String str6 = String.valueOf(100); // ºó ¹®ÀÚ¿­ ´õÇÏ´Â°Ô ´õ ½¬¿ö¼­ Àß ¾È¾µ»Ó
+    // ì°¸ê³ . ë¬¸ìì—´ë¡œ ë³€í™˜í•˜ëŠ” ë©”ì†Œë“œê°€ ìˆê¸´ í•¨
+    String str6 = String.valueOf(100); // ë¹ˆ ë¬¸ìì—´ ë”í•˜ëŠ”ê²Œ ë” ì‰¬ì›Œì„œ ì˜ ì•ˆì“¸ë¿
 
     System.out.println(str1);
     System.out.println(str2);
@@ -156,7 +156,7 @@ public class MainWrapper {
   }
 
   public static void main(String[] args) {
-//    ex01(); // ex01 ¸Ş¼Òµå ½ÇÇà (¸Ş¼Òµå È£Ãâ)
+    //    ex01(); // ex01 ë©”ì†Œë“œ ì‹¤í–‰ (ë©”ì†Œë“œ í˜¸ì¶œ)
 //    ex02();
 //    ex03();
 //    ex04();

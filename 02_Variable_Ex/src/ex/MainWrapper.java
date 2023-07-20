@@ -4,13 +4,13 @@ public class MainWrapper {
 
   public static void main(String[] args) {
 
-    // ÃÊ -> ºÐ/ÃÊ
+    // ì´ˆ -> ë¶„/ì´ˆ
     int second = 90;
     int m = second / 60; // 1
     int s = second % 60; // 30
-    System.out.println(second + "ÃÊ´Â" + m + "ºÐ " + s + "ÃÊÀÔ´Ï´Ù");
+    System.out.println(second + "ì´ˆëŠ”" + m + "ë¶„ " + s + "ì´ˆìž…ë‹ˆë‹¤");
 
-    // x¿Í y°ªÀ» ±³È¯
+    // xì™€ yê°’ì„ êµí™˜
     int x = 10;
     int y = 20;
     int temp = x;
@@ -19,15 +19,15 @@ public class MainWrapper {
     System.out.println(x);
     System.out.println(y);
 
-    // 5% ÀÌÀÚ ¹ÞÀ¸¸é ÅëÀåÀÜ¾× ¾ó¸¶?(¼Ò¼ö ÀÌÇÏ´Â ¹ö¸²)
-    long balance = 123456L; // ÅëÀåÀÜ¾×
+    // 5% ì´ìž ë°›ìœ¼ë©´ í†µìž¥ìž”ì•¡ ì–¼ë§ˆ?(ì†Œìˆ˜ ì´í•˜ëŠ” ë²„ë¦¼)
+    long balance = 123456L; // í†µìž¥ìž”ì•¡
     double pct = 0.05; // 5%
-    // balance = balance * 1 + balance * pct; //Å¸ÀÔ ¾È¸Â¾Æ¼­ ¿À·ù '='±âÁØ ¿ÞÂÊÀº long, ¿À¸¥ÂÊÀº double
-    // balance = balance * (1+pct); //Å¸ÀÔ ¾È¸Â¾Æ¼­ ¿À·ù ÀÌÀ¯´Â °°À½ (long)(balance)*(1+pct))
-    balance *= (1 + pct); // À§ÀÇ ½Ä ÁÙÀÎ°Í, À§´Â ½Ç¼ö°¡ ¸ÕÀú ³ª¿Â »óÅÂ·Î Á¤¼ö ÆÄÆ®·Î ³Ñ±â´Â ±¸Á¶¶ó ¿À·ù°í ÀÌ°Ç ÀÚµ¿ º¯È¯µÉ ¼ö ÀÖ°Ô Ç×ÀÌ µÎ°³ÀÎ°Å¶ó¼­ ¿À·ù ¾È³²
+    // balance = balance * 1 + balance * pct; //íƒ€ìž… ì•ˆë§žì•„ì„œ ì˜¤ë¥˜ '='ê¸°ì¤€ ì™¼ìª½ì€ long, ì˜¤ë¥¸ìª½ì€ double
+    // balance = balance * (1+pct); //íƒ€ìž… ì•ˆë§žì•„ì„œ ì˜¤ë¥˜ ì´ìœ ëŠ” ê°™ìŒ (long)(balance)*(1+pct))
+    balance *= (1 + pct); // ìœ„ì˜ ì‹ ì¤„ì¸ê²ƒ, ìœ„ëŠ” ì‹¤ìˆ˜ê°€ ë¨¼ì € ë‚˜ì˜¨ ìƒíƒœë¡œ ì •ìˆ˜ íŒŒíŠ¸ë¡œ ë„˜ê¸°ëŠ” êµ¬ì¡°ë¼ ì˜¤ë¥˜ê³  ì´ê±´ ìžë™ ë³€í™˜ë  ìˆ˜ ìžˆê²Œ í•­ì´ ë‘ê°œì¸ê±°ë¼ì„œ ì˜¤ë¥˜ ì•ˆë‚¨
     System.out.println(balance);
 
-    // 90Á¡´ë Á¡¼öÀÌ¸é true, ¾Æ´Ï¸é false
+    // 90ì ëŒ€ ì ìˆ˜ì´ë©´ true, ì•„ë‹ˆë©´ false
     int score1 = 95;
     boolean result1 = (score1 >= 90) && (score1 < 100); // true
     int score2 = 75;
@@ -35,15 +35,15 @@ public class MainWrapper {
     System.out.println(result1);
     System.out.println(result2);
 
-    // nÀÇ "Â¦¼ö", "È¦¼ö" ¿©ºÎ Ãâ·Â
+    // nì˜ "ì§ìˆ˜", "í™€ìˆ˜" ì—¬ë¶€ ì¶œë ¥
     int n = 3;
-    String res1 = (n % 2) == 0 ? "Â¦¼ö" : "È¦¼ö"; // "È¦¼ö"
+    String res1 = (n % 2) == 0 ? "ì§ìˆ˜" : "í™€ìˆ˜"; // "í™€ìˆ˜"
     System.out.println(res1);
 
-    // numÀÇ "Â¦¼ö", "È¦¼ö", "3ÀÇ¹è¼ö" ¿©ºÎ Ãâ·Â
+    // numì˜ "ì§ìˆ˜", "í™€ìˆ˜", "3ì˜ë°°ìˆ˜" ì—¬ë¶€ ì¶œë ¥
     int num = 3;
-    String res2 = (num != 0) && (num % 3 == 0) ? "3ÀÇ ¹è¼ö" : (num % 2) == 0 ? "Â¦¼ö" : "È¦¼ö"; // "3ÀÇ¹è¼ö"
-    System.out.println(res2); // 0µµ 3À¸·Î ³ª´©¸é ³ª¸ÓÁö 0À¸·Î °è»êµÊ, 3À» 0À¸·Î ³ª´©¸é ¿À·ù
+    String res2 = (num != 0) && (num % 3 == 0) ? "3ì˜ ë°°ìˆ˜" : (num % 2) == 0 ? "ì§ìˆ˜" : "í™€ìˆ˜"; // "3ì˜ë°°ìˆ˜"
+    System.out.println(res2); // 0ë„ 3ìœ¼ë¡œ ë‚˜ëˆ„ë©´ ë‚˜ë¨¸ì§€ 0ìœ¼ë¡œ ê³„ì‚°ë¨, 3ì„ 0ìœ¼ë¡œ ë‚˜ëˆ„ë©´ ì˜¤ë¥˜
 
   }
 

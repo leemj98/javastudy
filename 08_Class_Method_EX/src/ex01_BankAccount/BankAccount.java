@@ -1,51 +1,51 @@
 package ex01_BankAccount;
 
 /**
- * ÀÔ±İ, Ãâ±İ, °èÁÂÁ¶È¸, ÀÌÃ¼ ±â´ÉÀ» Á¦°øÇÏ´Â Å¬·¡½º
- * @author È«±æµ¿
+ * ì…ê¸ˆ, ì¶œê¸ˆ, ê³„ì¢Œì¡°íšŒ, ì´ì²´ ê¸°ëŠ¥ì„ ì œê³µí•˜ëŠ” í´ë˜ìŠ¤
+ * @author í™ê¸¸ë™
  * @since 2023.07.19
  * @version 1.0
  */
 public class BankAccount {
 
   /**
-   * long balance ÀÌ ÇÊµå´Â °èÁÂ ÀÜ¾×ÀÌ´Ù. <br>
-   * ÃÊ±ê°ªÀ¸·Î 0ÀÌ ÀúÀåµÈ´Ù.
+   * long balance ì´ í•„ë“œëŠ” ê³„ì¢Œ ì”ì•¡ì´ë‹¤. <br>
+   * ì´ˆê¹ƒê°’ìœ¼ë¡œ 0ì´ ì €ì¥ëœë‹¤.
    */
   private long balance;
 
   /**
-   * String accNo ÀÌ ÇÊµå´Â °èÁÂ ¹øÈ£ÀÌ´Ù. <br>
-   * ÃÊ±ê°ªÀ¸·Î nullÀÌ ÀúÀåµÈ´Ù.
+   * String accNo ì´ í•„ë“œëŠ” ê³„ì¢Œ ë²ˆí˜¸ì´ë‹¤. <br>
+   * ì´ˆê¹ƒê°’ìœ¼ë¡œ nullì´ ì €ì¥ëœë‹¤.
    */
   private String accNo;
 
   /**
-   * °èÁÂ¹øÈ£¿Í ÅëÀåÀÜ¾×À» Á¶È¸ÇÏ´Â ¸Ş¼Òµå
+   * ê³„ì¢Œë²ˆí˜¸ì™€ í†µì¥ì”ì•¡ì„ ì¡°íšŒí•˜ëŠ” ë©”ì†Œë“œ
    */
   public void inquiry() {
-    System.out.println("°èÁÂ¹øÈ£: " + accNo);
-    System.out.println("ÅëÀåÀÜ¾×: " + balance + "¿ø");
+    System.out.println("ê³„ì¢Œë²ˆí˜¸: " + accNo);
+    System.out.println("í†µì¥ì”ì•¡: " + balance + "ì›");
   }
 
   /**
-   * ÀÔ±İ ¸Ş¼Òµå<br>
-   * ÆÄ¶ó¹ÌÅÍ°¡ 0º¸´Ù ÀÛ°Å³ª °°À¸¸é µ¿ÀÛÇÏÁö ¾Ê´Â´Ù.
-   * @param money ÀÔ±İÇÒ ±İ¾×
+   * ì…ê¸ˆ ë©”ì†Œë“œ<br>
+   * íŒŒë¼ë¯¸í„°ê°€ 0ë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ìœ¼ë©´ ë™ì‘í•˜ì§€ ì•ŠëŠ”ë‹¤.
+   * @param money ì…ê¸ˆí•  ê¸ˆì•¡
    */
   public void deposit(long money) {
     if (money <= 0) {
-      return; // ¸Ş¼Òµå Á¾·á
+      return; // ë©”ì†Œë“œ ì¢…ë£Œ
     }
     balance += money;
   }
 
   /**
-   * Ãâ±İ ¸Ş¼Òµå<br>
-   * ÆÄ¶ó¹ÌÅÍ°¡ 0º¸´Ù ÀÛ°Å³ª °°À¸¸é Ãâ±İµÈ ±İ¾×ÀÌ ¾øÀ¸¹Ç·Î 0 ¹İÈ¯
-   * ÆÄ¶ó¹ÌÅÍ°¡ ÅëÀåÀÜ¾×(balance)º¸´Ù Å©¸é Ãâ±İµÈ ±İ¾×ÀÌ ¾øÀ¸¹Ç·Î 0 ¹İÈ¯ 
-   * @param money Ãâ±İÇÒ ±İ¾×
-   * @return ½ÇÁ¦·Î Ãâ±İµÈ ±İ¾×
+   * ì¶œê¸ˆ ë©”ì†Œë“œ<br>
+   * íŒŒë¼ë¯¸í„°ê°€ 0ë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ìœ¼ë©´ ì¶œê¸ˆëœ ê¸ˆì•¡ì´ ì—†ìœ¼ë¯€ë¡œ 0 ë°˜í™˜
+   * íŒŒë¼ë¯¸í„°ê°€ í†µì¥ì”ì•¡(balance)ë³´ë‹¤ í¬ë©´ ì¶œê¸ˆëœ ê¸ˆì•¡ì´ ì—†ìœ¼ë¯€ë¡œ 0 ë°˜í™˜ 
+   * @param money ì¶œê¸ˆí•  ê¸ˆì•¡
+   * @return ì‹¤ì œë¡œ ì¶œê¸ˆëœ ê¸ˆì•¡
    */
   //  public long withdrawal(long money) {
   //    if(money<=0 || money>balance) {
@@ -53,7 +53,7 @@ public class BankAccount {
   //    }
   //    balance -= money;
   //    return money;
-  //  } //returnÀÌ 2°³ÀÎ °Íº¸´Ù ÇÏ³ªÀÎ°Ô ÁÁÀ½  
+  //  } //returnì´ 2ê°œì¸ ê²ƒë³´ë‹¤ í•˜ë‚˜ì¸ê²Œ ì¢‹ìŒ  
   public long withdrawal(long money) {
     long retVal = 0;
     if (money <= 0 || money > balance) {
@@ -65,6 +65,28 @@ public class BankAccount {
     return retVal;
   }
 
+  /**
+   * ì´ì²´ ë©”ì†Œë“œ<br>
+   * ë‹¤ë¥¸ ê³„ì¢Œë¡œ ì´ì²´í•˜ëŠ” ë©”ì†Œë“œë¡œ ê¸°ì¡´ì˜ ì…ê¸ˆ ë©”ì†Œë“œì™€ ì¶œê¸ˆ ë©”ì†Œë“œë¥¼ í™œìš©
+   * ë‚´ ê³„ì¢Œì—ì„œ ì¶œê¸ˆì„ ë¨¼ì € ìˆ˜í–‰í•˜ê³ , ì¶œê¸ˆëœ ê¸ˆì•¡ë§Œí¼ ë‹¤ë¥¸ ê³„ì¢Œë¡œ ì…ê¸ˆ
+   * @param acc ë‹¤ë¥¸ ê³„ì¢Œ
+   * @param money ì´ì²´í•  ê¸ˆì•¡
+   */
+  // Transfer
+  public void transfer(BankAccount acc, long money) {
+    //    withdrawal(money); // ë™ì¼ í´ë˜ìŠ¤ì—ì„œ ë©”ì†Œë“œ í˜¸ì¶œí•˜ë©´ ë©”ì†Œë“œ ì´ë¦„ë§Œ ë¶€ë¥´ë©´ ë¨
+    acc.deposit(withdrawal(money)); //w: ë‚´ í†µì¥ì—ì„œ ëˆ ë¹¼ê³  a.d: ëº€ë§Œí¼ ìƒëŒ€ ê³„ì¢Œë¡œ ì…ê¸ˆ
+  }
+
+  // Setter  
+  public void setBalance(long balance) {
+    this.balance = balance;
+  }
+
+  public void setAccNo(String accNo) {
+    this.accNo = accNo;
+  }
+
   // Getter
   public long getBalance() {
     return balance;
@@ -74,24 +96,4 @@ public class BankAccount {
     return accNo;
   }
 
-  // Setter  
-  public void setBalance(long param) {
-    balance = param;
-  }
-
-  public void setAccNo(String param) {
-    accNo = param;
-  }
-
-  // Transfer
-  public void transfer(BankAccount name, long money) {
-    
-    System.out.println(name.withdrawal(money));
-    if (money <= 0 || money > balance) {
-      return;
-    } else {
-      balance -= money;
-      System.out.println(name.withdrawal(money));
-    }
-  }
 }

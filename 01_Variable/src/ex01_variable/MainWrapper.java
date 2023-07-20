@@ -3,61 +3,61 @@ package ex01_variable;
 public class MainWrapper {
 
   public static void main(String[] args) {
-    // single comment (ÇÑ ÁÙ ÁÖ¼®)
+    // single comment (í•œ ì¤„ ì£¼ì„)
     /*
-     * multiple comment (¿©·¯ ÁÙ ÁÖ¼®)
+     * multiple comment (ì—¬ëŸ¬ ì¤„ ì£¼ì„)
      */
 
     /*
-     * '/*' Àû°í ¿£ÅÍ ´©¸£¸é ÀÚµ¿À¸·Î ¸¸µé¾îÁü
+     * '/*' ì ê³  ì—”í„° ëˆ„ë¥´ë©´ ìë™ìœ¼ë¡œ ë§Œë“¤ì–´ì§
      */
 
     /*
-     * Å°¿öµå ±ÔÄ¢ 1. ÇÁ·ÎÁ§Æ® : ¸¾´ë·Î 2. ÆĞÅ°Áö : ¸ğµÎ ¼Ò¹®ÀÚ·Î ÀÛ¼º(½Ç¹«´Â È¸»ç µµ¸ŞÀÎ °Å²Ù·Î ÀÛ¼º: com.samsung.xxx)
-     * 3. Å¬·¡½º : UpperCamelCase (Ã¹ ±ÛÀÚ ´ë¹®ÀÚ Ä«¸á ÄÉÀÌ½º) 4. ¸Ş¼Òµå : lowerCamelCase (Ã¹ ±ÛÀÚ ¼Ò¹®ÀÚ
-     * Ä«¸á ÄÉÀÌ½º) 5. º¯¼ö : lowerCamelCase 6. »ó¼ö : SANLE_CASE (´ë¹®ÀÚ¸¦ ¹ØÁÙ·Î ¿¬°á)
+     * í‚¤ì›Œë“œ ê·œì¹™ 1. í”„ë¡œì íŠ¸ : ë§˜ëŒ€ë¡œ 2. íŒ¨í‚¤ì§€ : ëª¨ë‘ ì†Œë¬¸ìë¡œ ì‘ì„±(ì‹¤ë¬´ëŠ” íšŒì‚¬ ë„ë©”ì¸ ê±°ê¾¸ë¡œ ì‘ì„±: com.samsung.xxx)
+     * 3. í´ë˜ìŠ¤ : UpperCamelCase (ì²« ê¸€ì ëŒ€ë¬¸ì ì¹´ë©œ ì¼€ì´ìŠ¤) 4. ë©”ì†Œë“œ : lowerCamelCase (ì²« ê¸€ì ì†Œë¬¸ì
+     * ì¹´ë©œ ì¼€ì´ìŠ¤) 5. ë³€ìˆ˜ : lowerCamelCase 6. ìƒìˆ˜ : SANLE_CASE (ëŒ€ë¬¸ìë¥¼ ë°‘ì¤„ë¡œ ì—°ê²°)
      */
 
-    // µé¿©¾²±â´Â ÇÊ¼ö. ÄÚµå°¡ °³¹ßÀÚÀÇ ¾ó±¼
+    // ë“¤ì—¬ì“°ê¸°ëŠ” í•„ìˆ˜. ì½”ë“œê°€ ê°œë°œìì˜ ì–¼êµ´
 
-    // º¯¼ö ¼±¾ğ
-    // primitive type -1 : ³í¸®Å¸ÀÔ
+    // ë³€ìˆ˜ ì„ ì–¸
+    // primitive type -1 : ë…¼ë¦¬íƒ€ì…
     boolean isGood = true;
     boolean isAlive = false;
     System.out.println(isGood);
     System.out.println(isAlive);
 
-    // primitive type -2 : ¹®ÀÚÅ¸ÀÔ
+    // primitive type -2 : ë¬¸ìíƒ€ì…
     char ch1 = 'A';
-    char ch2 = '°¡';
+    char ch2 = 'ê°€';
     System.out.println(ch1);
     System.out.println(ch2);
 
-    // primitive type -3 : Á¤¼öÅ¸ÀÔ
+    // primitive type -3 : ì •ìˆ˜íƒ€ì…
     int score = 100;
-    long money = 1000000000L; // L(l) ¾ÈºÙ¿©ÁÖ¸é ¹üÀ§ ÀÌÅ»
+    long money = 1000000000L; // L(l) ì•ˆë¶™ì—¬ì£¼ë©´ ë²”ìœ„ ì´íƒˆ
     System.out.println(score);
     System.out.println(money);
 
-    // primitive type -4 : ½Ç¼öÅ¸ÀÔ
+    // primitive type -4 : ì‹¤ìˆ˜íƒ€ì…
     double commission = 0.5;
     System.out.println(commission);
 
-    // »ó¼ö
+    // ìƒìˆ˜
     final double PI = 3.141592;
     System.out.println(PI);
 
-    // reference type : ÂüÁ¶Å¸ÀÔ
+    // reference type : ì°¸ì¡°íƒ€ì…
 
-    // ¦£--------------¦¤
-    // name¦¢ 0x12345678 ¦¢
-    // ¦¢--------------¦¢
-    // ¦¢ ... ¦¢
-    // ¦¢--------------¦¢
-    // ¦¢ tom ¦¢0x12345678
-    // ¦¢--------------¦¢
-    // ¦¢ ... ¦¢
-    // ¦¦--------------¦¥
+    // â”Œ--------------â”
+    // nameâ”‚ 0x12345678 â”‚
+    // â”‚--------------â”‚
+    // â”‚ ... â”‚
+    // â”‚--------------â”‚
+    // â”‚ tom â”‚0x12345678
+    // â”‚--------------â”‚
+    // â”‚ ... â”‚
+    // â””--------------â”˜
 
     String name = "tom";
     System.out.println(name);

@@ -4,38 +4,38 @@ import java.util.Arrays;
 
 public class MainWrappper {
 
-  // 1Â÷¿ø ¹è¿­ÀÇ advanced-for¹®
+  // 1ì°¨ì› ë°°ì—´ì˜ advanced-forë¬¸
   public static void ex01() {
-    // 1Â÷¿ø ¹è¿­ÀÇ ÃÊ±âÈ­
+    // 1ì°¨ì› ë°°ì—´ì˜ ì´ˆê¸°í™”
     int[] a = { 10, 20, 30 };
     // advanced-for
-    for (int number : a) { //    for(¹è¿­¿ä¼Ò¸¦ ÀúÀåÇÒ º¯¼ö: ¹è¿­¸í)
+    for (int number : a) { //    for(ë°°ì—´ìš”ì†Œë¥¼ ì €ìž¥í•  ë³€ìˆ˜: ë°°ì—´ëª…)
       System.out.println(number);
-    } // ¹è¿­ aÀÇ ¸ðµç ¿ä¼Ò¸¦ ¼øÂ÷ÀûÀ¸·Î number·Î ³Ñ±è (ÀÎµ¦½º¸¦ ÀûÁö ¾ÊÀ½) 
+    } // ë°°ì—´ aì˜ ëª¨ë“  ìš”ì†Œë¥¼ ìˆœì°¨ì ìœ¼ë¡œ numberë¡œ ë„˜ê¹€ (ì¸ë±ìŠ¤ë¥¼ ì ì§€ ì•ŠìŒ) 
   }
 
-  // advanced-for¹®À» »ç¿ëÇÏÁö ¸øÇÏ´Â ´ëÇ¥ÀûÀÎ °æ¿ì : ¹è¿­¿ä¼ÒÀÇ °ªÀÌ º¯ÇÏ´Â °æ¿ì
+  // advanced-forë¬¸ì„ ì‚¬ìš©í•˜ì§€ ëª»í•˜ëŠ” ëŒ€í‘œì ì¸ ê²½ìš° : ë°°ì—´ìš”ì†Œì˜ ê°’ì´ ë³€í•˜ëŠ” ê²½ìš°
   public static void ex02() {
-    // 1Â÷¿ø ¹è¿­ÀÇ ÃÊ±âÈ­
+    // 1ì°¨ì› ë°°ì—´ì˜ ì´ˆê¸°í™”
     int[] a = { 10, 20, 30 };
 
-    // ¸ðµç ¹è¿­¿ä¼Ò¸¦ 1¾¿ Áõ°¡½ÃÅ°±â -1 : advanced-for(ºÒ°¡´É)
+    // ëª¨ë“  ë°°ì—´ìš”ì†Œë¥¼ 1ì”© ì¦ê°€ì‹œí‚¤ê¸° -1 : advanced-for(ë¶ˆê°€ëŠ¥)
     for (int number : a) {
       number++;
     }
 
-    // ¹è¿­ ¿ä¼Ò È®ÀÎ
-    System.out.println(Arrays.toString(a)); // 11,21,31ÀÌ ³ª¿Í¾ß Á¤»óÀÎµ¥ 10,20,30 ±×´ë·Î 
-    // Çâ»ó for¹®Àº ¹è¿­ ¿ä¼Ò¸¦ ±×´ë·Î ¾²Áö ¾Ê°í º¹»çÇØ¼­ ¾²´Â °ÍÀÌ±â ¶§¹®. numberÀÇ °ªÀÌ Áõ°¡ÇÑ°ÅÁö ¹è¿­¿øº»ÀÌ Áõ°¡ÇÏÁö´Â ¾ÊÀ½
+    // ë°°ì—´ ìš”ì†Œ í™•ì¸
+    System.out.println(Arrays.toString(a)); // 11,21,31ì´ ë‚˜ì™€ì•¼ ì •ìƒì¸ë° 10,20,30 ê·¸ëŒ€ë¡œ 
+    // í–¥ìƒ forë¬¸ì€ ë°°ì—´ ìš”ì†Œë¥¼ ê·¸ëŒ€ë¡œ ì“°ì§€ ì•Šê³  ë³µì‚¬í•´ì„œ ì“°ëŠ” ê²ƒì´ê¸° ë•Œë¬¸. numberì˜ ê°’ì´ ì¦ê°€í•œê±°ì§€ ë°°ì—´ì›ë³¸ì´ ì¦ê°€í•˜ì§€ëŠ” ì•ŠìŒ
 
-    // ¸ðµç ¹è¿­¿ä¼Ò¸¦ 1¾¿ Áõ°¡½ÃÅ°±â -2 : ÀÏ¹Ý for¹® (°¡´É)
+    // ëª¨ë“  ë°°ì—´ìš”ì†Œë¥¼ 1ì”© ì¦ê°€ì‹œí‚¤ê¸° -2 : ì¼ë°˜ forë¬¸ (ê°€ëŠ¥)
     for (int i = 0; i < a.length; i++) {
       a[i]++;
     }
-    System.out.println(Arrays.toString(a)); // 11,21,31ÀÌ ³ª¿È
+    System.out.println(Arrays.toString(a)); // 11,21,31ì´ ë‚˜ì˜´
   }
 
-  // 2Â÷¿ø ¹è¿­ÀÇ advanced-for¹®
+  // 2ì°¨ì› ë°°ì—´ì˜ advanced-forë¬¸
   public static void ex03() {
     int[][] a = { { 10, 20 }, { 30, 40 }, { 50, 60 } };
 

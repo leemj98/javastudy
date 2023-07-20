@@ -3,13 +3,13 @@ package ex01_branch;
 public class MainWrapper {
 
   public static void ex01() {
-    // Á¡¼ö¿¡ µû¸¥ ÇĞÁ¡(if¹®)
+    // ì ìˆ˜ì— ë”°ë¥¸ í•™ì (ifë¬¸)
     int score = 100;
     char grade; // 'A', 'B', 'C', 'D', 'F'
 
     if (score > 90 && score <= 100) {
       grade = 'A';
-    } else if (score > 80) { // && score <= 90 ¾ÈÀû¾îµµ µÊ (À§¿¡¼­ Ã¼Å©ÇßÀ¸´Ï±î)
+    } else if (score > 80) { // && score <= 90 ì•ˆì ì–´ë„ ë¨ (ìœ„ì—ì„œ ì²´í¬í–ˆìœ¼ë‹ˆê¹Œ)
       grade = 'B';
     } else if (score > 70) {
       grade = 'C';
@@ -18,18 +18,18 @@ public class MainWrapper {
     } else {
       grade = 'F';
     }
-    System.out.println(score + "Á¡Àº " + grade + "ÇĞÁ¡ÀÔ´Ï´Ù");
+    System.out.println(score + "ì ì€ " + grade + "í•™ì ì…ë‹ˆë‹¤");
   }
 
   public static void ex02() {
-    // Á¡¼ö¿¡ µû¸¥ ÇĞÁ¡(switch¹®)
+    // ì ìˆ˜ì— ë”°ë¥¸ í•™ì (switchë¬¸)
     int score = 100;
     char grade; // 'A', 'B', 'C', 'D', 'F'
 
     switch (score / 10) {
     case 10:
     case 9:
-      grade = 'A'; // 10, 9´Â °á°ú°¡ °°¾Æ¼­ 10¿¡ ½ÇÇà¹®ÀÌ¶û break ¾È¾¸
+      grade = 'A'; // 10, 9ëŠ” ê²°ê³¼ê°€ ê°™ì•„ì„œ 10ì— ì‹¤í–‰ë¬¸ì´ë‘ break ì•ˆì”€
       break;
     case 8:
       grade = 'B';
@@ -44,131 +44,131 @@ public class MainWrapper {
       grade = 'F';
       break;
     }
-    System.out.println(score + "Á¡Àº " + grade + "ÀÔ´Ï´Ù");
+    System.out.println(score + "ì ì€ " + grade + "ì…ë‹ˆë‹¤");
   }
 
   public static void ex03() {
-    // Á¡¼ö¿Í ÇĞ³â¿¡ µû¸¥ ÇĞÁ¡
-    // 1~3ÇĞ³â : 60Á¡ ÀÌ»ó ÇÕ°İ, ¾Æ´Ï¸é ºÒÇÕ°İ
-    // 4~6ÇĞ³â : 70Á¡ ÀÌ»ó ÇÕ°İ, ¾Æ´Ï¸é ºÒÇÕ°İ
-    int score = 60; // Á¡¼ö
-    int scYear = 3; // ÇĞ³â
-    String pass = null; // "ÇÕ°İ", "ºÒÇÕ°İ"
+    // ì ìˆ˜ì™€ í•™ë…„ì— ë”°ë¥¸ í•™ì 
+    // 1~3í•™ë…„ : 60ì  ì´ìƒ í•©ê²©, ì•„ë‹ˆë©´ ë¶ˆí•©ê²©
+    // 4~6í•™ë…„ : 70ì  ì´ìƒ í•©ê²©, ì•„ë‹ˆë©´ ë¶ˆí•©ê²©
+    int score = 60; // ì ìˆ˜
+    int scYear = 3; // í•™ë…„
+    String pass = null; // "í•©ê²©", "ë¶ˆí•©ê²©"
 
     for (int i = 0; i < 6; i++) {
       if (scYear < 4) {
         if (score >= 60) {
-          pass = "ÇÕ°İ";
+          pass = "í•©ê²©";
         } else {
-          pass = "ºÒÇÕ°İ";
+          pass = "ë¶ˆí•©ê²©";
         }
       } else {
         if (score >= 70) {
-          pass = "ÇÕ°İ";
+          pass = "í•©ê²©";
         } else {
-          pass = "ºÒÇÕ°İ";
+          pass = "ë¶ˆí•©ê²©";
         }
       }
     }
 
 //    if (scYear >= 1 && scYear <= 3) {
 //      if (score >= 60) {
-//        pass = "ÇÕ°İ";
+//        pass = "í•©ê²©";
 //      } else {
-//        pass = "ºÒÇÕ°İ";
+//        pass = "ë¶ˆí•©ê²©";
 //      }
 //    } else if (scYear >= 4 && scYear <= 6) {
 //      if (score >= 70) {
-//        pass = "ÇÕ°İ";
+//        pass = "í•©ê²©";
 //      } else {
-//        pass = "ºÒÇÕ°İ";
+//        pass = "ë¶ˆí•©ê²©";
 //      }
 //    }
-    System.out.println(scYear + "ÇĞ³â " + score + "Á¡Àº " + pass);
+System.out.println(scYear + "í•™ë…„ " + score + "ì ì€ " + pass);
   }
 
   public static void ex04() {
-    // ¸Ş´º¿¡ µû¸¥ °¡°İ
-    // ¾Æ¸Ş¸®Ä«³ë : 2000
-    // Ä«Æä¶ó¶¼ : 2500
-    // ¹ĞÅ©Æ¼ : 3000
-    // ±âÅ¸ : 5000
-    String order = "¾Æ¸Ş¸®Ä«³ë";
+    // ë©”ë‰´ì— ë”°ë¥¸ ê°€ê²©
+    // ì•„ë©”ë¦¬ì¹´ë…¸ : 2000
+    // ì¹´í˜ë¼ë–¼ : 2500
+    // ë°€í¬í‹° : 3000
+    // ê¸°íƒ€ : 5000
+    String order = "ì•„ë©”ë¦¬ì¹´ë…¸";
     int price = 0;
 
     switch (order) {
-    case "¾Æ¸Ş¸®Ä«³ë":
+    case "ì•„ë©”ë¦¬ì¹´ë…¸":
       price = 2000;
       break;
-    case "Ä«Æä¶ó¶¼":
+    case "ì¹´í˜ë¼ë–¼":
       price = 2500;
       break;
-    case "¹ĞÅ©Æ¼":
+    case "ë°€í¬í‹°":
       price = 3000;
       break;
-    case "±âÅ¸":
+    case "ê¸°íƒ€":
       price = 5000;
       break;
     default:
       break;
     }
 
-    System.out.println(order + "´Â " + price + "¿ø ÀÔ´Ï´Ù.");
+    System.out.println(order + "ëŠ” " + price + "ì› ì…ë‹ˆë‹¤.");
   }
 
   public static void ex05() {
-    // ¿ù¿¡ µû¸¥ °èÀı
-    // 3 ~ 5 : º½
-    // 6 ~ 8 : ¿©¸§
-    // 9 ~ 11: °¡À»
-    // 12 ~ 2: °Ü¿ï
+    // ì›”ì— ë”°ë¥¸ ê³„ì ˆ
+    // 3 ~ 5 : ë´„
+    // 6 ~ 8 : ì—¬ë¦„
+    // 9 ~ 11: ê°€ì„
+    // 12 ~ 2: ê²¨ìš¸
     int month = 7;
-    String season; // "º½", "¿©¸§", "°¡À»", "°Ü¿ï"
+    String season; // "ë´„", "ì—¬ë¦„", "ê°€ì„", "ê²¨ìš¸"
 
     if (month >= 3 && month <= 5) {
-      season = "º½";
+      season = "ë´„";
     } else if (month >= 6 && month <= 8) {
-      season = "¿©¸§";
+      season = "ì—¬ë¦„";
     } else if (month >= 9 && month <= 11) {
-      season = "°¡À»";
+      season = "ê°€ì„";
     } else {
-      season = "°Ü¿ï";
+      season = "ê²¨ìš¸";
     }
-    System.out.println(month + "¿ùÀº " + season + "ÀÔ´Ï´Ù");
+    System.out.println(month + "ì›”ì€ " + season + "ì…ë‹ˆë‹¤");
 
-    // ¹®ÀÚ¿­Àº ==·Î ºñ±³ÇÒ ¼ö ¾ø±â ¶§¹®¿¡ if·Î ÀÛ¼º x (equals()¸¦ ¾²¸é µÈ´ÙÇÔ)
+    // ë¬¸ìì—´ì€ ==ë¡œ ë¹„êµí•  ìˆ˜ ì—†ê¸° ë•Œë¬¸ì— ifë¡œ ì‘ì„± x (equals()ë¥¼ ì“°ë©´ ëœë‹¤í•¨)
   }
 
   public static void ex05_2() {
-    // ¿ù¿¡ µû¸¥ °èÀı ¿ù%12
-    // 3 ~ 5 : º½ 3~5
-    // 6 ~ 8 : ¿©¸§ 6~8
-    // 9 ~ 11: °¡À» 9~11
-    // 12 ~ 2: °Ü¿ï 0~2
+    // ì›”ì— ë”°ë¥¸ ê³„ì ˆ ì›”%12
+    // 3 ~ 5 : ë´„ 3~5
+    // 6 ~ 8 : ì—¬ë¦„ 6~8
+    // 9 ~ 11: ê°€ì„ 9~11
+    // 12 ~ 2: ê²¨ìš¸ 0~2
     int month = 7;
     int mod = month % 12;
-    String season; // "º½", "¿©¸§", "°¡À»", "°Ü¿ï"
+    String season; // "ë´„", "ì—¬ë¦„", "ê°€ì„", "ê²¨ìš¸"
 
     if (mod <= 2) {
-      season = "°Ü¿ï";
+      season = "ê²¨ìš¸";
     } else if (mod <= 5) {
-      season = "º½";
+      season = "ë´„";
     } else if (mod <= 8) {
-      season = "¿©¸§";
+      season = "ì—¬ë¦„";
     } else {
-      season = "°¡À»";
+      season = "ê°€ì„";
     }
-    System.out.println(month + "¿ùÀº " + season + "ÀÔ´Ï´Ù");
+    System.out.println(month + "ì›”ì€ " + season + "ì…ë‹ˆë‹¤");
 
-    // ¹®ÀÚ¿­Àº ==·Î ºñ±³ÇÒ ¼ö ¾ø±â ¶§¹®¿¡ if·Î ÀÛ¼º x (equals()¸¦ ¾²¸é µÈ´ÙÇÔ)
+    // ë¬¸ìì—´ì€ ==ë¡œ ë¹„êµí•  ìˆ˜ ì—†ê¸° ë•Œë¬¸ì— ifë¡œ ì‘ì„± x (equals()ë¥¼ ì“°ë©´ ëœë‹¤í•¨)
   }
 
   public static void ex06() {
-    // ¿ù¿¡ µû¸¥ ºĞ±â
-    // 1 ~ 3 : 1ºĞ±â
-    // 4 ~ 6 : 2ºĞ±â
-    // 7 ~ 9 : 3ºĞ±â
-    // 10 ~ 12 : 4ºĞ±â
+    // ì›”ì— ë”°ë¥¸ ë¶„ê¸°
+    // 1 ~ 3 : 1ë¶„ê¸°
+    // 4 ~ 6 : 2ë¶„ê¸°
+    // 7 ~ 9 : 3ë¶„ê¸°
+    // 10 ~ 12 : 4ë¶„ê¸°
     int month = 7;
     int quarter = 0;
 
@@ -181,69 +181,69 @@ public class MainWrapper {
     } else {
       quarter = 4;
     }
-    System.out.println(month + "¿ùÀº " + quarter + "ºĞ±â ÀÔ´Ï´Ù");
+    System.out.println(month + "ì›”ì€ " + quarter + "ë¶„ê¸° ì…ë‹ˆë‹¤");
   }
 
   public static void ex06_2() {
-    // ¿ù¿¡ µû¸¥ ºĞ±â ºĞ±â °è»ê
-    // 1 ~ 3 : 1ºĞ±â (month -1) /3 + 1 = 1
-    // 4 ~ 6 : 2ºĞ±â (month -1) /3 + 1 = 2
-    // 7 ~ 9 : 3ºĞ±â (month -1) /3 + 1 = 3
-    // 10 ~ 12 : 4ºĞ±â (month -1) /3 + 1 = 4
+    // ì›”ì— ë”°ë¥¸ ë¶„ê¸° ë¶„ê¸° ê³„ì‚°
+    // 1 ~ 3 : 1ë¶„ê¸° (month -1) /3 + 1 = 1
+    // 4 ~ 6 : 2ë¶„ê¸° (month -1) /3 + 1 = 2
+    // 7 ~ 9 : 3ë¶„ê¸° (month -1) /3 + 1 = 3
+    // 10 ~ 12 : 4ë¶„ê¸° (month -1) /3 + 1 = 4
     int month = 7;
 
-    System.out.println((month - 1) / 3 + 1 + "ºĞ±â ÀÔ´Ï´Ù");
+    System.out.println((month - 1) / 3 + 1 + "ë¶„ê¸° ì…ë‹ˆë‹¤");
   }
 
   public static void ex07() {
-    // 10ÀÏ ÈÄ ¿äÀÏÀº?
-    int day = 13; // 13ÀÏÀº ¸ñ¿äÀÏ
-    int nDay = 1; // 10ÀÏ
-    String weekname = null; // "¿ù", "È­", "¼ö", "¸ñ", "±İ", "Åä", "ÀÏ"
+    // 10ì¼ í›„ ìš”ì¼ì€?
+    int day = 13; // 13ì¼ì€ ëª©ìš”ì¼
+    int nDay = 1; // 10ì¼
+    String weekname = null; // "ì›”", "í™”", "ìˆ˜", "ëª©", "ê¸ˆ", "í† ", "ì¼"
 
     switch ((day + nDay) % 7) {
     case 1:
-      weekname = "Åä¿äÀÏ";
+      weekname = "í† ìš”ì¼";
       break;
     case 2:
-      weekname = "ÀÏ¿äÀÏ";
+      weekname = "ì¼ìš”ì¼";
       break;
     case 3:
-      weekname = "¿ù¿äÀÏ";
+      weekname = "ì›”ìš”ì¼";
       break;
     case 4:
-      weekname = "È­¿äÀÏ";
+      weekname = "í™”ìš”ì¼";
       break;
     case 5:
-      weekname = "¼ö¿äÀÏ";
+      weekname = "ìˆ˜ìš”ì¼";
       break;
     case 6:
-      weekname = "¸ñ¿äÀÏ";
+      weekname = "ëª©ìš”ì¼";
       break;
     case 0:
-      weekname = "±İ¿äÀÏ";
+      weekname = "ê¸ˆìš”ì¼";
       break;
     }
-    System.out.println(day + "ÀÏ¿¡¼­ " + nDay + "ÀÏ ÈÄ´Â " + weekname + "ÀÔ´Ï´Ù");
-    // ¹è¿­·Î ½ºÀ§Ä¡¾øÀÌ Ç®¼öµµ ÀÖÀ½ (05_Array ex01 - ex05)
+    System.out.println(day + "ì¼ì—ì„œ " + nDay + "ì¼ í›„ëŠ” " + weekname + "ì…ë‹ˆë‹¤");
+    // ë°°ì—´ë¡œ ìŠ¤ìœ„ì¹˜ì—†ì´ í’€ìˆ˜ë„ ìˆìŒ (05_Array ex01 - ex05)
   }
 
   public static void ex08() {
-    // ´ë¼Ò¹®ÀÚ º¯È¯ (±¸±Û¸µÀ¸·Î ¾Æ½ºÅ°ÄÚµå °Ë»ö ÈÄ Âü°í)
-    char ch = 'A'; // ÀÓÀÇÀÇ ´ë¹®ÀÚ ¶Ç´Â ¼Ò¹®ÀÚ
+    // ëŒ€ì†Œë¬¸ì ë³€í™˜ (êµ¬ê¸€ë§ìœ¼ë¡œ ì•„ìŠ¤í‚¤ì½”ë“œ ê²€ìƒ‰ í›„ ì°¸ê³ )
+    char ch = 'A'; // ì„ì˜ì˜ ëŒ€ë¬¸ì ë˜ëŠ” ì†Œë¬¸ì
 //    if (ch>=65 && ch <90) {
-//      //´ë¹®ÀÚ ¹üÀ§¿¡ ¼ÓÇÏ´ÂÁö °Ë»ç
+    //      //ëŒ€ë¬¸ì ë²”ìœ„ì— ì†í•˜ëŠ”ì§€ ê²€ì‚¬
 //      ch+=32;
 //    } else if (ch>=97 && ch <122) {
-//      // ¼Ò¹®ÀÚ ¹üÀ§¿¡ ¼ÓÇÏ´ÂÁö °Ë»ç
+//      // ì†Œë¬¸ì ë²”ìœ„ì— ì†í•˜ëŠ”ì§€ ê²€ì‚¬
 //      ch-=32;
 //    }
 
     if (ch >= 'A' && ch < 'Z') {
-      // ´ë¹®ÀÚ ¹üÀ§¿¡ ¼ÓÇÏ´ÂÁö °Ë»ç
+      // ëŒ€ë¬¸ì ë²”ìœ„ì— ì†í•˜ëŠ”ì§€ ê²€ì‚¬
       ch += 32;
     } else if (ch >= 'a' && ch < 'z') {
-      // ¼Ò¹®ÀÚ ¹üÀ§¿¡ ¼ÓÇÏ´ÂÁö °Ë»ç
+      // ì†Œë¬¸ì ë²”ìœ„ì— ì†í•˜ëŠ”ì§€ ê²€ì‚¬
       ch -= 32;
     }
     System.out.println(ch);

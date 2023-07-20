@@ -4,17 +4,17 @@ public class MainWrapper {
 
   public static void main(String[] args) {
 
-    // Calculator °´Ã¼ ¼±¾ğ
+    // Calculator ê°ì²´ ì„ ì–¸
     Calculator myCalc;
 
-    // Calculator °´Ã¼ »ı¼º
-    myCalc = new Calculator();
+    // Calculator ê°ì²´ ìƒì„± (ê°ì²´ == ì¸ìŠ¤í„´ìŠ¤)
+    myCalc = new Calculator(); //ì¸ìŠ¤í„´ìŠ¤í™” : ë©”ëª¨ë¦¬ì— ë¡œë“œë˜ì—ˆë‹¤.
 
-    // °è»êÇÏ°íÀÚ ÇÏ´Â ½Ç¼ö 2°³ ÁØºñ
+    // ê³„ì‚°í•˜ê³ ì í•˜ëŠ” ì‹¤ìˆ˜ 2ê°œ ì¤€ë¹„
     double a = 1.5;
     double b = 1.2;
 
-    // µ¡¼À, »¬¼À, °ö¼À, ³ª´°¼À ¸Ş¼Òµå È£Ãâ
+    // ë§ì…ˆ, ëº„ì…ˆ, ê³±ì…ˆ, ë‚˜ëˆ—ì…ˆ ë©”ì†Œë“œ í˜¸ì¶œ
     System.out.println(myCalc.additon(a, b));
     System.out.println(myCalc.subtraction(a, b));
     System.out.println(myCalc.multiplication(a, b));

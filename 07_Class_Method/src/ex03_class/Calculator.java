@@ -2,9 +2,9 @@ package ex03_class;
 
 /**
  * 
- * µ¡¼À, »¬¼À, °ö¼À, ³ª´°¼À ±â´ÉÀ» Á¦°øÇÏ´Â °è»ê±â Å¬·¡½º
+ * ë§ì…ˆ, ëº„ì…ˆ, ê³±ì…ˆ, ë‚˜ëˆ—ì…ˆ ê¸°ëŠ¥ì„ ì œê³µí•˜ëŠ” ê³„ì‚°ê¸° í´ë˜ìŠ¤
  * 
- * @author GDJ
+ * @author í™ê¸¸ë™
  * @since 2023.07.19
  * @version 1.0.0
  *
@@ -13,11 +13,11 @@ public class Calculator {
 
   /**
    * 
-   * ½Ç¼ö 2°³¸¦ Àü´Ş¹Ş¾Æ¼­ µ¡¼À °á°ú¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+   * ì‹¤ìˆ˜ 2ê°œë¥¼ ì „ë‹¬ë°›ì•„ì„œ ë§ì…ˆ ê²°ê³¼ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
    * 
-   * @param a ½Ç¼ö
-   * @param b ½Ç¼ö
-   * @return ÆÄ¶ó¹ÌÅÍ 2°³ÀÇ ÇÕ
+   * @param a ì‹¤ìˆ˜
+   * @param b ì‹¤ìˆ˜
+   * @return íŒŒë¼ë¯¸í„° 2ê°œì˜ í•©
    */
   public double additon(double a, double b) {
     return a + b;
@@ -25,11 +25,11 @@ public class Calculator {
 
   /**
    * 
-   * ½Ç¼ö 2°³¸¦ Àü´Ş¹Ş¾Æ¼­ »¬¼À °á°ú¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+   * ì‹¤ìˆ˜ 2ê°œë¥¼ ì „ë‹¬ë°›ì•„ì„œ ëº„ì…ˆ ê²°ê³¼ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
    * 
-   * @param a ½Ç¼ö
-   * @param b ½Ç¼ö
-   * @return ÆÄ¶ó¹ÌÅÍ 2°³ÀÇ Â÷
+   * @param a ì‹¤ìˆ˜
+   * @param b ì‹¤ìˆ˜
+   * @return íŒŒë¼ë¯¸í„° 2ê°œì˜ ì°¨
    */
   public double subtraction(double a, double b) {
     return a - b;
@@ -37,11 +37,11 @@ public class Calculator {
 
   /**
    * 
-   * ½Ç¼ö 2°³¸¦ Àü´Ş¹Ş¾Æ¼­ °ö¼À °á°ú¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+   * ì‹¤ìˆ˜ 2ê°œë¥¼ ì „ë‹¬ë°›ì•„ì„œ ê³±ì…ˆ ê²°ê³¼ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
    * 
-   * @param a ½Ç¼ö
-   * @param b ½Ç¼ö
-   * @return ÆÄ¶ó¹ÌÅÍ 2°³ÀÇ °ö
+   * @param a ì‹¤ìˆ˜
+   * @param b ì‹¤ìˆ˜
+   * @return íŒŒë¼ë¯¸í„° 2ê°œì˜ ê³±
    */
   public double multiplication(double a, double b) {
     return a * b;
@@ -49,11 +49,11 @@ public class Calculator {
 
   /**
    * 
-   * ½Ç¼ö 2°³¸¦ Àü´Ş¹Ş¾Æ¼­ ³ª´°¼ÀÀÇ ¸òÀ» ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+   * ì‹¤ìˆ˜ 2ê°œë¥¼ ì „ë‹¬ë°›ì•„ì„œ ë‚˜ëˆ—ì…ˆì˜ ëª«ì„ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
    * 
-   * @param a ½Ç¼ö
-   * @param b ½Ç¼ö
-   * @return ÆÄ¶ó¹ÌÅÍ 2°³ÀÇ ³ª´°¼À
+   * @param a ì‹¤ìˆ˜
+   * @param b ì‹¤ìˆ˜
+   * @return íŒŒë¼ë¯¸í„° 2ê°œì˜ ë‚˜ëˆ—ì…ˆ
    */
   public double division(double a, double b) {
     return a / b;

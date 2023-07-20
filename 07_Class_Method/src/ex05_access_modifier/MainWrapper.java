@@ -4,14 +4,14 @@ public class MainWrapper {
 
   public static void main(String[] args) {
 
-    // User °´Ã¼(°´Ã¼¸í u) »õ¾ù¤·
+    // User ê°ì²´(ê°ì²´ëª… u) ìƒì„±
     User u = new User();
 
-    // User °´Ã¼¿¡ µ¥ÀÌÅÍ ÀúÀå
+    // User ê°ì²´ì— ë°ì´í„° ì €ì¥
     u.setId("admin");
-    u.setAge(30); // 30ÀÌ User.java¿¡¼­ setAge ÆÄ¶ó¹ÌÅÍ °ÅÃÄ¼­ age ÇÊµå·Î Àü´Ş
+    u.setAge(30); // 30ì´ User.javaì—ì„œ setAge íŒŒë¼ë¯¸í„° ê±°ì³ì„œ age í•„ë“œë¡œ ì „ë‹¬
 
-    // User °´Ã¼ÀÇ µ¥ÀÌÅÍ È®ÀÎ
+    // User ê°ì²´ì˜ ë°ì´í„° í™•ì¸
     System.out.println(u.getId());
     System.out.println(u.getAge());
   }

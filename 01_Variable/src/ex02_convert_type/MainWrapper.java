@@ -3,31 +3,31 @@ package ex02_convert_type;
 public class MainWrapper {
   public static void main(String[] args) {
     /*
-     * ÀÚµ¿ º¯È¯(promotion) 1. ÀÛÀº Å©±â -> Å« Å©±â 2. Á¤¼ö -> ½Ç¼ö
+     * ìžë™ ë³€í™˜(promotion) 1. ìž‘ì€ í¬ê¸° -> í° í¬ê¸° 2. ì •ìˆ˜ -> ì‹¤ìˆ˜
      */
 
-    byte num1 = 127; // byte´Â -128~127 °¡´É
-    int num2 = num1; // 1¹ÙÀÌÆ® Å©±â¸¦ °¡Áø num1À» 4¹ÙÀÌÆ® Å©±â·Î ÀÚµ¿ º¯È¯
+    byte num1 = 127; // byteëŠ” -128~127 ê°€ëŠ¥
+    int num2 = num1; // 1ë°”ì´íŠ¸ í¬ê¸°ë¥¼ ê°€ì§„ num1ì„ 4ë°”ì´íŠ¸ í¬ê¸°ë¡œ ìžë™ ë³€í™˜
     System.out.println(num2);
 
-    double addResult = 1.5 + 5; // 5¸¦ 5.0À¸·Î ÀÚµ¿ º¯È¯
+    double addResult = 1.5 + 5; // 5ë¥¼ 5.0ìœ¼ë¡œ ìžë™ ë³€í™˜
     System.out.println(addResult);
 
     /*
-     * °­Á¦ º¯È¯(casting) 1. Å« Å©±â -> ÀÛÀº Å©±â 2. ½Ç¼ö -> Á¤¼ö
+     * ê°•ì œ ë³€í™˜(casting) 1. í° í¬ê¸° -> ìž‘ì€ í¬ê¸° 2. ì‹¤ìˆ˜ -> ì •ìˆ˜
      */
 
     int bigNum = 256;
-    byte smallNum = (byte) bigNum; // 4¹ÙÀÌÆ® bigNumÀ» °­Á¦·Î 1¹ÙÀÌÆ®·Î º¯È¯
-    System.out.println(smallNum); // 256 2Áø¼ö = 100000000 Ä³½ºÆÃÇÏ¸é¼­ 1ÀÌ Àß¸®°í 0¸¸ ³²À½
-    // Ä³½ºÆÃÀ» ÇÏ°ÔµÇ¸é ¿øº»ÀÌ ¼Õ»óµÉ ¼ö ÀÖÀ½
+    byte smallNum = (byte) bigNum; // 4ë°”ì´íŠ¸ bigNumì„ ê°•ì œë¡œ 1ë°”ì´íŠ¸ë¡œ ë³€í™˜
+    System.out.println(smallNum); // 256 2ì§„ìˆ˜ = 100000000 ìºìŠ¤íŒ…í•˜ë©´ì„œ 1ì´ ìž˜ë¦¬ê³  0ë§Œ ë‚¨ìŒ
+    // ìºìŠ¤íŒ…ì„ í•˜ê²Œë˜ë©´ ì›ë³¸ì´ ì†ìƒë  ìˆ˜ ìžˆìŒ
 
     double pct = 0.5;
-    int iPct = (int) pct; // ½Ç¼ö¸¦ °­Á¦·Î Á¤¼ö·Î º¯È¯ -> ¼Ò¼öÁ¡ Àß·Á³ª°¨
+    int iPct = (int) pct; // ì‹¤ìˆ˜ë¥¼ ê°•ì œë¡œ ì •ìˆ˜ë¡œ ë³€í™˜ -> ì†Œìˆ˜ì  ìž˜ë ¤ë‚˜ê°
     System.out.println(iPct);
 
     /*
-     * ±¸¹® ºÐ¼®(parsing) 1. ¹®ÀÚ¿­ -> Á¤¼ö(int, long) 2. ¹®ÀÚ¿­ -> ½Ç¼ö(double)
+     * êµ¬ë¬¸ ë¶„ì„(parsing) 1. ë¬¸ìžì—´ -> ì •ìˆ˜(int, long) 2. ë¬¸ìžì—´ -> ì‹¤ìˆ˜(double)
      */
 
     String strScore = "100";

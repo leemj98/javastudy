@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class MainWrapper1 {
 
   /*
-   * ¹İÈ¯(return)
-   * 1. ¸Ş¼ÒµåÀÇ ½ÇÇà °á°ú °ªÀ» ÀÇ¹Ì
-   * 2. ¹İÈ¯°ªÀÌ ¾ø´Â °æ¿ì¿¡´Â void Å°¿öµå ÀÛ¼ºÇÏ°í ¹İÈ¯°ªÀÌ ÀÖ´Â °æ¿ì¿¡´Â ¹İÈ¯°ªÀÇ Å¸ÀÔÀ» ÀÛ¼º
+   * ë°˜í™˜(return)
+   * 1. ë©”ì†Œë“œì˜ ì‹¤í–‰ ê²°ê³¼ ê°’ì„ ì˜ë¯¸
+   * 2. ë°˜í™˜ê°’ì´ ì—†ëŠ” ê²½ìš°ì—ëŠ” void í‚¤ì›Œë“œ ì‘ì„±í•˜ê³  ë°˜í™˜ê°’ì´ ìˆëŠ” ê²½ìš°ì—ëŠ” ë°˜í™˜ê°’ì˜ íƒ€ì…ì„ ì‘ì„±
    */
 
   public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class MainWrapper1 {
   }
 
   public static String[] getHobbies() {
-    String[] hobbies = { "¿©Çà", "¼ö¿µ", "¿µÈ­" };
+    String[] hobbies = { "ì—¬í–‰", "ìˆ˜ì˜", "ì˜í™”" };
     return hobbies;
   }
 
@@ -32,7 +32,7 @@ public class MainWrapper1 {
     return age;
   }
   public static String getName() {
-    String name = "È«±æµ¿";
-    return name; //¸Ş¼Òµå¸¦ È£ÃâÇÑ °÷À¸·Î ¹İÈ¯
+    String name = "í™ê¸¸ë™";
+    return name; //ë©”ì†Œë“œë¥¼ í˜¸ì¶œí•œ ê³³ìœ¼ë¡œ ë°˜í™˜
   }
 }

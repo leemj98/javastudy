@@ -2,19 +2,19 @@ package ex04_field;
 
 public class MainWrapper {
   public static void main(String[] args) {
-    //AccCalculator °´Ã¼ÀÇ ¼±¾ğ & »ı¼º
+    //AccCalculator ê°ì²´ì˜ ì„ ì–¸ & ìƒì„±
     AccCalculator myAcc = new AccCalculator();
 
-    //value È®ÀÎ
+    //value í™•ì¸
     myAcc.showValue();
 
-    //»çÄ¢¿¬»ê
+    //ì‚¬ì¹™ì—°ì‚°
     myAcc.addition(3);
     myAcc.substraction(2);
     myAcc.multipication(3);
     myAcc.division(2);
 
-    //value È®ÀÎ
+    //value í™•ì¸
     myAcc.showValue();
   }
 }

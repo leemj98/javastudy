@@ -5,33 +5,33 @@ public class MainWrapper {
 
   public static void main(String[] args) {
 
-    // BankAccount my °´Ã¼ »ı¼º
+    // BankAccount my ê°ì²´ ìƒì„±
     BankAccount my = new BankAccount();
 
-    // my °´Ã¼¿¡ °èÁÂ¹øÈ£ µî·Ï
+    // my ê°ì²´ì— ê³„ì¢Œë²ˆí˜¸ ë“±ë¡
     my.setAccNo("032-21-9874-321");
 
-    // my °´Ã¼¿¡ ÀÔ±İÇÏ±â
+    // my ê°ì²´ì— ì…ê¸ˆí•˜ê¸°
     my.deposit(50000);
 
-    // my °´Ã¼ Ãâ±İÇÏ±â
+    // my ê°ì²´ ì¶œê¸ˆí•˜ê¸°
     my.withdrawal(1);
 
-    // my °´Ã¼ Á¶È¸ÇÏ±â
+    // my ê°ì²´ ì¡°íšŒí•˜ê¸°
     my.inquiry();
 
-    // BankAccount you °´Ã¼ »ı¼º
+    // BankAccount you ê°ì²´ ìƒì„±
     BankAccount you = new BankAccount();
 
-    // you °´Ã¼¿¡ °èÁÂ¹øÈ£ µî·Ï
+    // you ê°ì²´ì— ê³„ì¢Œë²ˆí˜¸ ë“±ë¡
     you.setAccNo("02-578-6321");
 
-    // my¿¡¼­ you·Î 300000¿ø ÀÌÃ¼ÇÏ±â
+    // myì—ì„œ youë¡œ 300000ì› ì´ì²´í•˜ê¸°
     my.transfer(you, 30000);
 
-    // my, you °´Ã¼ Á¶È¸ÇÏ±â
-    my.inquiry(); // ÅëÀåÀÜ¾× 19999¿ø
-    you.inquiry(); // ÅëÀåÀÜ¾× 30000¿ø
+    // my, you ê°ì²´ ì¡°íšŒí•˜ê¸°
+    my.inquiry(); // í†µì¥ì”ì•¡ 19999ì›
+    you.inquiry(); // í†µì¥ì”ì•¡ 30000ì›
   }
 
 }

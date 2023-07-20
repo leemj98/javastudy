@@ -2,7 +2,7 @@ package ex04_field;
 
 /**
  * 
- * »çÄ¢¿¬»ê °á°ú¸¦ ÀúÀåÇÒ ¼ö ÀÖ´Â °è»ê±â 
+ * ì‚¬ì¹™ì—°ì‚° ê²°ê³¼ë¥¼ ì €ì¥í•  ìˆ˜ ìˆëŠ” ê³„ì‚°ê¸° 
  * 
  * @author GDJ
  * @since 2023.07.19
@@ -12,22 +12,22 @@ package ex04_field;
 public class AccCalculator {
 
   /*
-   * ÇÊµå(field)
-   * 1. °´Ã¼°¡ °¡Áú ¼ö ÀÖ´Â °ªÀ» ÀúÀåÇÒ º¯¼ö
-   * 2. Å¬·¡½º¿¡¼­ ¼±¾ğ
-   * 3. ÇÊµå´Â ÀÚµ¿À¸·Î ÃÊ±âÈ­µÊ (0, 0.0, false, null)
-   * 4. Á¤º¸ Àº´ĞÀ» À§ÇØ¼­ private Ã³¸®
+   * í•„ë“œ(field)
+   * 1. ê°ì²´ê°€ ê°€ì§ˆ ìˆ˜ ìˆëŠ” ê°’ì„ ì €ì¥í•  ë³€ìˆ˜
+   * 2. í´ë˜ìŠ¤ì—ì„œ ì„ ì–¸
+   * 3. í•„ë“œëŠ” ìë™ìœ¼ë¡œ ì´ˆê¸°í™”ë¨ (0, 0.0, false, null)
+   * 4. ì •ë³´ ì€ë‹‰ì„ ìœ„í•´ì„œ private ì²˜ë¦¬
    */
 
   /**
-   * ÀÌ ÇÊµå´Â AccCalculatorÀÇ »çÄ¢¿¬»ê °á°ú¸¦ <br> ÀúÀåÇÒ ¼ö ÀÖ´Â ÇÊµå
+   * ì´ í•„ë“œëŠ” AccCalculatorì˜ ì‚¬ì¹™ì—°ì‚° ê²°ê³¼ë¥¼ <br> ì €ì¥í•  ìˆ˜ ìˆëŠ” í•„ë“œ
    */
   private double value;
 
   /**
    * 
-   * ÇÊµå value¿¡ ÆÄ¶ó¹ÌÅÍ a¸¦ ´õÇØÁÖ´Â ¸Ş¼Òµå 
-   * @param a ½Ç¼ö
+   * í•„ë“œ valueì— íŒŒë¼ë¯¸í„° aë¥¼ ë”í•´ì£¼ëŠ” ë©”ì†Œë“œ 
+   * @param a ì‹¤ìˆ˜
    */
   public void addition(double a) {
     value += a;
@@ -35,7 +35,7 @@ public class AccCalculator {
   }
 
   /**
-   * ÇÊµå value¿¡¼­ ÆÄ¶ó¹ÌÅÍ a¸¦ »©ÁÖ´Â ¸Ş¼Òµå
+   * í•„ë“œ valueì—ì„œ íŒŒë¼ë¯¸í„° aë¥¼ ë¹¼ì£¼ëŠ” ë©”ì†Œë“œ
    * @param a
    */
   public void substraction(double a) {
@@ -45,7 +45,7 @@ public class AccCalculator {
   }
 
   /**
-   * ÇÊµå value¿¡ ÆÄ¶ó¹ÌÅÍ a¸¦ °öÇØÁÖ´Â ¸Ş¼Òµå
+   * í•„ë“œ valueì— íŒŒë¼ë¯¸í„° aë¥¼ ê³±í•´ì£¼ëŠ” ë©”ì†Œë“œ
    * @param a
    */
   public void multipication(double a) {
@@ -54,7 +54,7 @@ public class AccCalculator {
   }
 
   /**
-   * ÇÊµå value¸¦ ÆÄ¶ó¹ÌÅÍ a·Î ³ª´²ÁÖ´Â ¸Ş¼Òµå
+   * í•„ë“œ valueë¥¼ íŒŒë¼ë¯¸í„° aë¡œ ë‚˜ëˆ ì£¼ëŠ” ë©”ì†Œë“œ
    * @param a
    */
   public void division(double a) {
@@ -63,7 +63,7 @@ public class AccCalculator {
   }
 
   /**
-   * ÇÊµå value¸¦ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
+   * í•„ë“œ valueë¥¼ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
    */
   public void showValue() {
     System.out.println(value);
