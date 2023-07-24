@@ -1,7 +1,5 @@
 package exam;
 
-import java.util.Iterator;
-
 public class MainWrapper {
 
   // main
@@ -13,13 +11,13 @@ public class MainWrapper {
     // q5();
     // q6();
     // q7();
-    // q8();
-    // q9();
+    //    q8();
+    q9();
     // q10();
     // q11();
     // q12();
     // q13();
-    q14();
+    //    q14();
   }
   
   // q1. 절대값 구하기
@@ -96,7 +94,7 @@ public class MainWrapper {
       System.out.println(month + "월은 잘못된 정보입니다.");
       // return;
     } else {
-      System.out.println(month + "월은 " + season[month % 12 / 5] + "입니다.");
+      System.out.println(month + "월은 " + season[month % 12 / 3] + "입니다.");
       System.out.println(month + "월은 " + lastDay[month] + "일까지 있습니다."); 
     }
   }
@@ -174,7 +172,7 @@ public class MainWrapper {
   // 예시
   // 남자입니다.
   public static void q8() {
-    int number = 1234567;
+    int number = 2234567;
     
     if((number / 1000000) % 2 == 1) {
       System.out.println("남자입니다.");
@@ -182,14 +180,17 @@ public class MainWrapper {
       System.out.println("여자입니다.");
     }
     
-//  // switch문 예시
-//  switch (number / 1000000) {
-//  case 1: case 2: case 3:
-//    System.out.println("남자입니다.");
-//    break;
-//  default:
-//    System.out.println("여자입니다.");
+  // switch문 예시
+  switch (number / 1000000) {
+  case 1:
+  case 3:
+  case 5:
+    System.out.println("남자입니다.");
+    break;
+  default:
+    System.out.println("여자입니다.");
   }
+}
   
   
   // 카프리카 수 판별하기
@@ -208,9 +209,9 @@ public class MainWrapper {
   // ...
   // 5 x 5 = 25
   public static void q9() {
-    for(int dan = 1; dan <= 5; dan++) { // <<-------------------┐
+    for (int dan = 2; dan <= 5; dan++) { // <<-------------------┐
       System.out.println("---" + dan + "단---");             // │
-      for(int n = 2; n <= 9; n++) {                          // │
+      for (int n = 1; n <= 9; n++) { // │
         System.out.println(dan + "x" + n + "=" + (dan * n)); // │
         if(dan == 5 && n == 5) {                             // │  
           break; //---------------------------------------------┘

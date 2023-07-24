@@ -7,7 +7,7 @@ public class Gun {
 
   public Gun(int bullet) {
     this.bullet = bullet > MAX_BULLET ? MAX_BULLET : bullet;
-  }
+  } // 
 
   public void reload(int bullet) {
     if (this.bullet + bullet > MAX_BULLET) {
