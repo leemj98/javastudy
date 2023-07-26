@@ -37,7 +37,7 @@ public class GameUnit {
 
   // 호출을 위한 attack 메소드는 실행되지 않는다
   public void attack(GameUnit other) {
-
+    //추상 메소드로 변경 가능
   }
 
 }

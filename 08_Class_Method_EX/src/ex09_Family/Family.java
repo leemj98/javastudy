@@ -11,7 +11,7 @@ public class Family {
     /*
      *  현재 family 배열의 상태
      * ┌----------------------┐
-     * │ null │ null │ null │
+     * │  null │ null │ null  │
      * └----------------------┘
      */
   }

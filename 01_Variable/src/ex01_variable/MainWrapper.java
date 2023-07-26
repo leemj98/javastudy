@@ -52,11 +52,11 @@ public class MainWrapper {
     // ┌--------------┐
     // name│ 0x12345678 │
     // │--------------│
-    // │ ... │
+    // │ ...          │
     // │--------------│
     // │ tom │0x12345678
     // │--------------│
-    // │ ... │
+    // │ ...          │
     // └--------------┘
 
     String name = "tom";
@@ -64,4 +64,15 @@ public class MainWrapper {
 
   }
 
+  /*
+   * primitive type(기본타입) --> reference type(참조타입)
+   * 
+   *   boolean                -->   Boolean
+   *   Char                   -->   Character
+   *   byte                   -->   Byte
+   *   int                    -->   Integer
+   *   long                   -->   Long
+   *   double                 -->   Double
+   */
 }
+
