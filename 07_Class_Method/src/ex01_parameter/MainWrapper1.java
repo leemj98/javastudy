@@ -5,44 +5,44 @@ import java.util.Arrays;
 public class MainWrapper1 {
 
   /*
-   * 1. ÀÎ¼ö(Argument)
-   *  1) ¸Ş¼Òµå¿¡°Ô Àü´ŞÇÏ´Â °ª
-   *  2) ¸Ş¼Òµå¸¦ È£ÃâÇÒ ¶§ Àü´ŞÇÒ ¼ö ÀÖÀ½
-   * 2. ÆÄ¶ó¹ÌÅÍ(Parameter)
-   *  1) ÀÎ¼ö¸¦ ¹Ş¾Æ¼­ ÀúÀåÇÏ´Â º¯¼ö
-   *  2) ¸Å°³º¯¼ö¶ó°íµµ ÇÔ
+   * 1. ì¸ìˆ˜(Argument)
+   *  1) ë©”ì†Œë“œì—ê²Œ ì „ë‹¬í•˜ëŠ” ê°’
+   *  2) ë©”ì†Œë“œë¥¼ í˜¸ì¶œí•  ë•Œ ì „ë‹¬í•  ìˆ˜ ìˆìŒ
+   * 2. íŒŒë¼ë¯¸í„°(Parameter)
+   *  1) ì¸ìˆ˜ë¥¼ ë°›ì•„ì„œ ì €ì¥í•˜ëŠ” ë³€ìˆ˜
+   *  2) ë§¤ê°œë³€ìˆ˜ë¼ê³ ë„ í•¨
    */
 
   public static void main(String[] args) {
-    ex01(); // ÀÎ¼ö°¡ ¾ø´Â °æ¿ì
-    ex02(10); // ÀÎ¼ö°¡ Á¤¼ö 1°³ÀÎ °æ¿ì
-    ex03(1.5, 1.2); // ÀÎ¼ö°¡ ½Ç¼ö 2°³ÀÎ °æ¿ì
-    ex04("È«±æµ¿", 30); // ÀÎ¼ö°¡ ¹®ÀÚ¿­ 1°³¿Í Á¤¼ö 1°³ÀÎ °æ¿ì
+    ex01(); // ì¸ìˆ˜ê°€ ì—†ëŠ” ê²½ìš°
+    ex02(10); // ì¸ìˆ˜ê°€ ì •ìˆ˜ 1ê°œì¸ ê²½ìš°
+    ex03(1.5, 1.2); // ì¸ìˆ˜ê°€ ì‹¤ìˆ˜ 2ê°œì¸ ê²½ìš°
+    ex04("í™ê¸¸ë™", 30); // ì¸ìˆ˜ê°€ ë¬¸ìì—´ 1ê°œì™€ ì •ìˆ˜ 1ê°œì¸ ê²½ìš°
     int[] a = { 10, 20, 30 };
-    ex05(a); // ÀÎ¼ö°¡ ¹è¿­ 1°³ÀÎ °æ¿ì 
+    ex05(a); // ì¸ìˆ˜ê°€ ë°°ì—´ 1ê°œì¸ ê²½ìš° 
   }
 
-  public static void ex05(int[] arr) { // ÀÎ¼ö°¡ ¹è¿­ 1°³ÀÌ¸é ÆÄ¶ó¹ÌÅÍ int[] arr ¼±¾ğÇÔ. ¿©±â¼­ ¹è¿­ÀÌ¸§Àº ¾Æ¹«°Å³ª »ç¿ëÇØµµ ¹«¹æ
+  public static void ex05(int[] arr) { // ì¸ìˆ˜ê°€ ë°°ì—´ 1ê°œì´ë©´ íŒŒë¼ë¯¸í„° int[] arr ì„ ì–¸í•¨. ì—¬ê¸°ì„œ ë°°ì—´ì´ë¦„ì€ ì•„ë¬´ê±°ë‚˜ ì‚¬ìš©í•´ë„ ë¬´ë°©
     System.out.println("ex05: " + Arrays.toString(arr));
 
   }
 
-  public static void ex04(String name, int age) { // ¹®ÀÚ¿­ ÀÎ¼ö´Â ÆÄ¶ó¹ÌÅÍ String nameÀ¸·Î, Á¤¼ö ÀÎ¼ö´Â int age·Î ¹ŞÀ½ 
+  public static void ex04(String name, int age) { // ë¬¸ìì—´ ì¸ìˆ˜ëŠ” íŒŒë¼ë¯¸í„° String nameìœ¼ë¡œ, ì •ìˆ˜ ì¸ìˆ˜ëŠ” int ageë¡œ ë°›ìŒ 
     System.out.println("ex04: " + name);
     System.out.println("ex04: " + age);
 
   }
 
-  public static void ex03(double a, double b) { //ÀÎ¼ö°¡ ½Ç¼ö 2°³ÀÌ¸é ÆÄ¶ó¹ÌÅÍ double a, double b¸¦ ¼±¾ğÇÔ
+  public static void ex03(double a, double b) { //ì¸ìˆ˜ê°€ ì‹¤ìˆ˜ 2ê°œì´ë©´ íŒŒë¼ë¯¸í„° double a, double bë¥¼ ì„ ì–¸í•¨
     System.out.println("ex03: " + a);
     System.out.println("ex03: " + b);
   }
 
-  public static void ex02(int a) { // ÀÎ¼ö°¡ Á¤¼ö 1°³ÀÌ¸é ÆÄ¶ó¹ÌÅÍ int a¸¦ ¼±¾ğÇÔ
+  public static void ex02(int a) { // ì¸ìˆ˜ê°€ ì •ìˆ˜ 1ê°œì´ë©´ íŒŒë¼ë¯¸í„° int aë¥¼ ì„ ì–¸í•¨
     System.out.println("ex02: " + a);
   }
 
-  public static void ex01() { // ÀÎ¼ö°¡ ¾øÀ¸¸é ÆÄ¶ó¹ÌÅÍµµ ¾øÀ½
+  public static void ex01() { // ì¸ìˆ˜ê°€ ì—†ìœ¼ë©´ íŒŒë¼ë¯¸í„°ë„ ì—†ìŒ
 
   }
 

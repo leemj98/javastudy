@@ -2,19 +2,19 @@ package ex01_parameter;
 
 public class MainWrapper3 {
 
-  /* ¸» ÁÙÀÓÇ¥(ellipsis)
-   * 1. ¸Þ¼Òµå¸¦ Àü´ÞÇÏ´Â ÀÎ¼öÀÇ Å¸ÀÔÀÌ µ¿ÀÏÇÏÁö¸¸, °¹¼ö°¡ ¿©·¯ °³ÀÎ °æ¿ì¿¡ »ç¿ë
-   * 2. ¸» ÁÙÀÓÇ¥(...)¸¦ È°¿ë
-   * 3. ¸» ÁÙÀÓÇ¥·Î ¼±¾ðµÈ º¯¼ö´Â ¹è¿­·Î Ã³¸® 
+  /* ë§ ì¤„ìž„í‘œ(ellipsis)
+   * 1. ë©”ì†Œë“œë¥¼ ì „ë‹¬í•˜ëŠ” ì¸ìˆ˜ì˜ íƒ€ìž…ì´ ë™ì¼í•˜ì§€ë§Œ, ê°¯ìˆ˜ê°€ ì—¬ëŸ¬ ê°œì¸ ê²½ìš°ì— ì‚¬ìš©
+   * 2. ë§ ì¤„ìž„í‘œ(...)ë¥¼ í™œìš©
+   * 3. ë§ ì¤„ìž„í‘œë¡œ ì„ ì–¸ëœ ë³€ìˆ˜ëŠ” ë°°ì—´ë¡œ ì²˜ë¦¬ 
    */
 
   public static void main(String[] args) {
-    print(10);          // ÀÎ¼ö°¡ Á¤¼ö 1°³ÀÌ´Ù.
-    print(10, 20);      // ÀÎ¼ö°¡ Á¤¼ö 2°³ÀÌ´Ù.
-    print(10, 20, 30);  // ÀÎ¼ö°¡ Á¤¼ö 3°³ÀÌ´Ù.
+    print(10); // ì¸ìˆ˜ê°€ ì •ìˆ˜ 1ê°œì´ë‹¤.
+    print(10, 20); // ì¸ìˆ˜ê°€ ì •ìˆ˜ 2ê°œì´ë‹¤.
+    print(10, 20, 30); // ì¸ìˆ˜ê°€ ì •ìˆ˜ 3ê°œì´ë‹¤.
   }
 
-  public static void print(int... a) { // ¸» ÁÙÀÓÇ¥·Î ¼±¾ðµÈ ÆÄ¶ó¹ÌÅÍ´Â »ç½Ç ¹è¿­
+  public static void print(int... a) { // ë§ ì¤„ìž„í‘œë¡œ ì„ ì–¸ëœ íŒŒë¼ë¯¸í„°ëŠ” ì‚¬ì‹¤ ë°°ì—´
     for (int i = 0; i < a.length; i++) {
       System.out.println(a[i]);
     }
