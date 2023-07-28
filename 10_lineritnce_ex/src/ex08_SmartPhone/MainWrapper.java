@@ -9,6 +9,7 @@ public class MainWrapper {
     if (p instanceof Computer) {
       ((Computer) p).game(); //p.game() 치다보면 자동완성으로 뜸
       ((Computer) p).internet();
+
     }
     if (p instanceof Camera) {
       ((Camera) p).takePicture();

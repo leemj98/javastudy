@@ -103,7 +103,8 @@ public class MainWrapper {
     List<Integer> numbers = Arrays.asList(a);
 
     // 주의!! 초기화된 ArrayList는 길이를 변경할 수 없음
-    //    numbers.add(60); //오류
+    //    numbers.add(60); // 불가능
+    // numbers.remove(0); //불가능
 
     // for문
     for (int i = 0, length = numbers.size(); i < length; i++) {

@@ -5,7 +5,6 @@ public class Person {
   private String name;
 
   public Person() {
-    // TODO Auto-generated constructor stub
   }
 
   public Person(String name) {
