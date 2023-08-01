@@ -1,5 +1,6 @@
 package ex03_random;
 
+import java.util.Arrays;
 
 public class MainWrapper2 {
 
@@ -13,7 +14,7 @@ public class MainWrapper2 {
     for (int i = 0; i < dice.length; i++) {
       dice[i] = (int) (Math.random() * 3) + 1;
     }
-    System.out.println("주사위: " + dice;
+    System.out.println("주사위: " + Arrays.toString(dice));
 
   }
 

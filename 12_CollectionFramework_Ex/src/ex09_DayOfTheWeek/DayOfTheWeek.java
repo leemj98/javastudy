@@ -1,4 +1,5 @@
 package ex09_DayOfTheWeek;
+//풀이
 
 import java.util.Arrays;
 import java.util.List;
