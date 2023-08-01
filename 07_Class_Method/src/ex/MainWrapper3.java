@@ -3,18 +3,18 @@ package ex;
 import java.util.Arrays;
 
 public class MainWrapper3 {
-  // ÂüÁ¶Å¸ÀÔÀ» Àü´ŞÇÒ ¶§ (À¥ °³¹ß¿¡¼­ ´ëºÎºĞÀÇ ÀÎ¼ö¿Í ÆÄ¶ó¹ÌÅÍ°¡ ÂüÁ¶Å¸ÀÔÀÓ)
-  // ¸Å°³º¯¼ö¿¡¼­ ¼öÁ¤ÇØµµ ´Ù ¼öÁ¤µÊ
+  // ì°¸ì¡°íƒ€ì…ì„ ì „ë‹¬í•  ë•Œ (ì›¹ ê°œë°œì—ì„œ ëŒ€ë¶€ë¶„ì˜ ì¸ìˆ˜ì™€ íŒŒë¼ë¯¸í„°ê°€ ì°¸ì¡°íƒ€ì…ì„)
+  // ë§¤ê°œë³€ìˆ˜ì—ì„œ ìˆ˜ì •í•´ë„ ë‹¤ ìˆ˜ì •ë¨
 
   public static void ex01(int[] a) {
     System.out.println(Arrays.toString(a)); // int[] a = 0x10000000
     a[0] = 100;
-    System.out.println("ex01ÀÇ ¹è¿­ a = " + Arrays.toString(a));
+    System.out.println("ex01ì˜ ë°°ì—´ a = " + Arrays.toString(a));
   }
 
   public static void main(String[] args) {
     int[] a = { 10, 20, 30 };
-    ex01(a); // a ÂüÁ¶°ª: 0x10000000
-    System.out.println("mainÀÇ ¹è¿­ a = " + Arrays.toString(a));
+    ex01(a); // a ì°¸ì¡°ê°’: 0x10000000
+    System.out.println("mainì˜ ë°°ì—´ a = " + Arrays.toString(a));
   }
 }

@@ -1,24 +1,24 @@
 package ex;
 
 public class MainWrapper2 {
-  // µ¥ÀÌÅÍ¸¦ Àü´ŞÇÒ ¶§
-  // ¸Å°³º¯¼ö¿¡¼­ ¼öÁ¤ÇÏ¸é °Å±â¼­¸¸ ¼öÁ¤µÊ
+  // ë°ì´í„°ë¥¼ ì „ë‹¬í•  ë•Œ
+  // ë§¤ê°œë³€ìˆ˜ì—ì„œ ìˆ˜ì •í•˜ë©´ ê±°ê¸°ì„œë§Œ ìˆ˜ì •ë¨
 
   public static void ex01(int a, int b) {
     System.out.println(a + ", " + b);
     a++;
     b++;
-    System.out.println("ex01ÀÇ a = " + a);
-    System.out.println("ex01ÀÇ b = " + b);
+    System.out.println("ex01ì˜ a = " + a);
+    System.out.println("ex01ì˜ b = " + b);
   }
 
   public static void main(String[] args) {
 
     int a = 10;
     int b = 20;
-    ex01(a, b); // 10, 20 Ãâ·Â
-    System.out.println("mainÀÇ a = " + a);
-    System.out.println("mainÀÇ b = " + b);
+    ex01(a, b); // 10, 20 ì¶œë ¥
+    System.out.println("mainì˜ a = " + a);
+    System.out.println("mainì˜ b = " + b);
   }
 
 }

@@ -3,21 +3,21 @@ package ex;
 public class MainWrapper {
 
   public static void ex01() {
-    System.out.println("ÆÄ¶ó¹ÌÅÍ°¡ ¾ø´Â ex01");
+    System.out.println("íŒŒë¼ë¯¸í„°ê°€ ì—†ëŠ” ex01");
   }
 
-  public static void ex01(String str) { //ÆÄ¶ó¹ÌÅÍ String str : ÀÎ¼ö¸¦ ¹Ş¾Æ¼­ ÀúÀåÇÏ´Â º¯¼ö (¸Å°³º¯¼ö)
-    System.out.println("ÆÄ¶ó¹ÌÅÍ String str = " + str);
+  public static void ex01(String str) { //íŒŒë¼ë¯¸í„° String str : ì¸ìˆ˜ë¥¼ ë°›ì•„ì„œ ì €ì¥í•˜ëŠ” ë³€ìˆ˜ (ë§¤ê°œë³€ìˆ˜)
+    System.out.println("íŒŒë¼ë¯¸í„° String str = " + str);
   }
 
-  public static void ex01(int a, int b) { // ÆÄ¶ó¹ÌÅÍ int a, ÆÄ¶ó¹ÌÅÍ int b
-    System.out.println("ÆÄ¶ó¹ÌÅÍ int a = " + a);
-    System.out.println("ÆÄ¶ó¹ÌÅÍ int b = " + b);
+  public static void ex01(int a, int b) { // íŒŒë¼ë¯¸í„° int a, íŒŒë¼ë¯¸í„° int b
+    System.out.println("íŒŒë¼ë¯¸í„° int a = " + a);
+    System.out.println("íŒŒë¼ë¯¸í„° int b = " + b);
   }
 
   public static void main(String[] args) {
-    ex01(); // ex01() ¸Ş¼Òµå¿¡ Àü´ŞÇÏ´Â ÀÎ¼ö°¡ ¾ø´Ù
-    ex01("hello world"); // ex01() ¸Ş¼Òµå¿¡ ÀÎ¼ö "hello world"¸¦ Àü´Ş
-    ex01(10, 20); //ex01() ¸Ş¼Òµå¿¡ ÀÎ¼ö 10, 20À» Àü´Ş
+    ex01(); // ex01() ë©”ì†Œë“œì— ì „ë‹¬í•˜ëŠ” ì¸ìˆ˜ê°€ ì—†ë‹¤
+    ex01("hello world"); // ex01() ë©”ì†Œë“œì— ì¸ìˆ˜ "hello world"ë¥¼ ì „ë‹¬
+    ex01(10, 20); //ex01() ë©”ì†Œë“œì— ì¸ìˆ˜ 10, 20ì„ ì „ë‹¬
   }
 }

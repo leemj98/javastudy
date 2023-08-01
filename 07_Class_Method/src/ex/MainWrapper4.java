@@ -2,31 +2,31 @@ package ex;
 
 public class MainWrapper4 {
 
-  // void : ¸®ÅÏÀÌ ¾ø´Ù.
+  // void : ë¦¬í„´ì´ ì—†ë‹¤.
   public static void ex01() {
-    System.out.println("¸®ÅÏÀÌ ¾ø´Â ex01");
+    System.out.println("ë¦¬í„´ì´ ì—†ëŠ” ex01");
   }
 
-  // int : ¸®ÅÏÀÌ int Å¸ÀÔ
+  // int : ë¦¬í„´ì´ int íƒ€ì…
   public static int ex02() {
     return 100;
   }
 
-  // String : ¸®ÅÏÀÌ string Å¸ÀÔ
+  // String : ë¦¬í„´ì´ string íƒ€ì…
   public static String ex03() {
     return "Hello World";
   }
 
   public static void main(String[] args) {
-    ex01(); //¹İÈ¯(return)ÀÌ ¾øÀ» ¶§ - ¹Ş¾Æ¿À´Â°Ô ¾øÀ½, È£ÃâÇÏ¸é ³¡
+    ex01(); //ë°˜í™˜(return)ì´ ì—†ì„ ë•Œ - ë°›ì•„ì˜¤ëŠ”ê²Œ ì—†ìŒ, í˜¸ì¶œí•˜ë©´ ë
 
-    int n = ex02(); // ½ÇÇà ÈÄ¿¡´Â int n = 100;
+    int n = ex02(); // ì‹¤í–‰ í›„ì—ëŠ” int n = 100;
     System.out.println(n);
-    System.out.println(ex02()); // ½ÇÇà ÈÄ¿¡´Â System.out.println(100);
+    System.out.println(ex02()); // ì‹¤í–‰ í›„ì—ëŠ” System.out.println(100);
     if (ex02() > 0) {
-      System.out.println("¾ç¼ö");
+      System.out.println("ì–‘ìˆ˜");
     } else {
-      System.out.println("À½¼ö");
+      System.out.println("ìŒìˆ˜");
     }
 
     String str = ex03();
