@@ -14,7 +14,7 @@ public class Ex03_java_sql_Date {
 
     //java.sql.Timestamp 클래스
     //DB의 TIMESTAMP 타입을 처리하는 Timestamp 클래스
-    Timestamp timestamp = new java.sql.Timestamp(System.currentTimeMillis()); //현재 날짠
+    Timestamp timestamp = new java.sql.Timestamp(System.currentTimeMillis()); //현재 날짜
     System.out.println(timestamp);
   }
 }
