@@ -11,6 +11,44 @@ package ex02_lambda;
  * 
  */
 
+/*
+ * 람다 표현식 적용 예시
+ * 1. 파라미터X, 반환X
+ * 		() -> {
+ * 			System.out.print("hello world");
+ * 		};
+ * 
+ * 		() -> System.out.print("hello world"); // 메소드 본문이 1줄이면 중괄호 {} 생략 가능
+ * 
+ * 2. 파라미터O, 반환X (파라미터의 타입은 생략한다 (할수있다가 아니라 무조건)
+ * 		(name) -> {
+ * 			System.out.print("hello"+name);
+ * 		};
+ * 
+ * 		(name) -> System.out.print("hello"+name); 
+ * 
+ * 3. 파라미터X, 반환O (반환 타입은 생략한다)
+ *    () -> {
+ *    	String name = "tom";
+ *    	return name;
+ *    };
+ *    
+ *    () -> "tom"; // return "tom" 이랑 똑같음. 메소드에 return만 있으면 return 생략
+ *    
+ * 4. 파라미터O, 반환O
+ * 		// 이름을 전달하면 "님을 붙여서 출력하고 해당 값을 반환하는 함수
+ * 	  (name) -> {
+ * 			String retVal = name+"님"; 
+ * 			System.out.println(retVal);
+ * 			return retVal;
+ * 		};
+ * 
+ * 		// 정수 값을 전달하면 해당 값보다 1이 큰 수를 반환하는 함수
+ * 		(n) -> n+1;
+ * 
+ *    
+ * 
+ */
 
 public class GasStation {
 
