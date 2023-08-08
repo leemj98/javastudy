@@ -24,7 +24,7 @@ public class MainWrapper {
      */
     
     // 원본 파일의 File 객체 생성
-    File dir1 = new File("C:/app/GOODEE/product/18.0.0/dbhomeXE/oui/instImages");
+    File dir1 = new File("C:/app/GDJ/product/18.0.0/dbhomeXE/oui/instImages");
     File src = new File(dir1, "bg.jpg");
     
     // 원본을 읽는 입력스트림 선언

@@ -10,7 +10,7 @@ import java.util.Map;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class JSON_Library {
+public class Ex01_JSON_Library {
 
 	/*
 	 * JSON 공식 홈페이지
