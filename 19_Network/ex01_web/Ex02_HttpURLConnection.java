@@ -9,7 +9,7 @@ public class Ex02_HttpURLConnection {
 
 	public static void main(String[] args) {
 		
-	// 접속할 주소
+	  // 접속할 주소
     String spec = "https://ssl.pstatic.net/melona/libs/1456/1456783/f24d4712cb2688092681_20230803123239648.jpg";
     
     // URL 객체 선언

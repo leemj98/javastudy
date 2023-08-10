@@ -13,7 +13,7 @@ public class Ex03_Binary_InputStream {
 
 	public static void main(String[] args) {
 		
-// 웹 상의 파일 읽기
+   // 웹 상의 파일 읽기
     
     // 접속할 주소
     String spec = "https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png";
@@ -60,8 +60,8 @@ public class Ex03_Binary_InputStream {
       // 실제로 읽은 바이트 수
       int readByte = 0;
       
-      // 읽기 (네이버 배너 이미지를 byte[] b에 저장하기)     
-      // 쓰기 (byte[] b의 내용을 banner.jpeg 파일로 보내기)
+      // 읽기 (배너 이미지를 byte[] b에 저장하기)     
+      // 쓰기 (byte[] b의 내용을 banner.png 파일로 보내기)
       while((readByte = bin.read(b)) != -1) {
         bout.write(b, 0, readByte);
       }
