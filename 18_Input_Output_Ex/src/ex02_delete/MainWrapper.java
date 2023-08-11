@@ -49,8 +49,8 @@ public class MainWrapper {
   
   public static void main(String[] args) {
     // ex01();
-    ex01(new File("C:/2023/08/03/16"));
-    // ex02();
+//    ex01(new File("C:/2023/08/03/16"));
+     ex02();
   }
 
 }

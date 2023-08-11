@@ -20,6 +20,7 @@ public class MainWrapper {
 	
 	public static void ex01() {
 		Consumer<String> consumer = (t) -> System.out.println(t+"님");
+		// 		Consumer<String> consumer = System.out::println;
 		
 		consumer.accept("홍길동");
 	}

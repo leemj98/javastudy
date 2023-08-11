@@ -15,7 +15,7 @@ public class Ex03_Naver_Search {
 		
 		/*
 		 * 네이버개발자센터 - 검색(블로그)
-		 * 1. 요청주소: https://openapi.naver.com/v1/search/blog.json
+		 * 1. 요청주소 : https://openapi.naver.com/v1/search/blog.json
 		 * 2. 요청변수
 		 * 		1) query : 필수, 인코딩된 검색어
 		 * 		2) display : 선택, 10 (검색 결과의 개수)
@@ -61,7 +61,9 @@ public class Ex03_Naver_Search {
         sb.append(line);
       }
       
+      System.out.println(sb.toString());
       JSONObject obj = new JSONObject(sb.toString());
+      
       JSONArray items = obj.getJSONArray("items");
       for (int i = 0,length = items.length(); i < length; i++) {
 				JSONObject item = items.getJSONObject(i);
